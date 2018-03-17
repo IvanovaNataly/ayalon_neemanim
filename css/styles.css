@@ -152,6 +152,52 @@ body {
 	background-color: green;
 }
 
+.table-filters {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.search-fund {
+    width: 30%;
+    height: 40px;
+    background-color: white;
+}
+
+.fund-type,
+.fund-manager,
+.fund-route {
+    width: 19%;
+    height: 40px;
+    margin-right: 1%;
+    background-color: white;
+}
+
+.bounds {
+    width: 97%;
+    height: 40px;
+    margin: 16px auto;
+    background-color: white;
+}
+
+.table {
+
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 0;
+}
+
+.table-cell {
+    width: 12%;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
 /* Articles sidebar */
 .table-sidebar {
 	width: 33.3%;
