@@ -184,14 +184,20 @@ body {
     width: 56px;
     height: 56px;
     line-height: 56px;
+    position: absolute;
+    left: 0;
+    background-color: #eceff1;
 }
 
 .ddl-arrow-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background: url('../img/ddl-arrow.png') no-repeat center;
     background-size: cover;
+    position: absolute;
+    top: 16px;
+    left: 16px;
 }
 
 .bounds {
