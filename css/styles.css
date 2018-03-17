@@ -101,11 +101,15 @@ body {
 }
 
 .main-nav {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-nav-wrapper {
     text-align: center;
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
-	position: relative;
+    position: relative;
 }
 
 .nav-list {
@@ -145,6 +149,7 @@ body {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 5px; /*to delete*/
 }
 
 .table-section {
