@@ -166,13 +166,17 @@ body {
 
 .article-item {
 	margin: 16px;
-	background-color: yellow;
 	overflow: hidden;
+}
+
+.article-link {
+    display: block;
 }
 
 .article-figure {
 	margin: 0;
 	padding: 0;
+    background-color: transparent;
 }
 
 .article-img {
@@ -182,12 +186,21 @@ body {
 	background-color: blue;
 }
 
+.figure-caption {
+    background: white;
+    margin-left: 22px;
+}
+
 .article-title {
-	padding: 0 16px;
+	padding: 4px 16px 0;
+    font-family: OpenSansHebrew;
+    font-size: 18px;
 }
 
 .article-subtitle {
-	padding: 0 16px 16px;
+    display: block;
+    padding: 0 16px 10px;
+    font-size: 14px;
 }
 
 
