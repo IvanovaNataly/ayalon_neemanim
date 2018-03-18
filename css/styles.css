@@ -271,6 +271,14 @@ body {
 	overflow: hidden;
 }
 
+.article-item:first-child {
+    margin-top: 0;
+}
+
+.article-item:last-child {
+    margin-bottom: 0;
+}
+
 .article-link {
     display: block;
 }
@@ -353,10 +361,15 @@ body {
     width: 380px;
     height: 56px;
     flex-basis: 380px;
-    margin: 0 !important;
+    margin: 0;
 }
 
-.report-form-item .request-input {
+.report-form-item:not(:last-child) {
+    margin-left: 20px;
+}
+
+.report-form-item .request-input,
+.report-form-item.request-btn {
     margin-top: 0;
 }
 
