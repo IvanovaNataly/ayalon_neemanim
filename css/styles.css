@@ -92,12 +92,11 @@ body {
 /* Navigation */
 .logo-container {
 	padding: 15px 0;
-	text-align: center;
 	border-bottom: 1px solid #cfd8dc;
 }
 
 .logo-img {
-	width: 100px;
+	/*width: 100px;*/
 }
 
 .main-nav {
@@ -126,7 +125,7 @@ body {
 	display: block;
 	width: 100%;
 	height: 100%;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -154,15 +153,23 @@ body {
 
 .table-section {
 	display: flex;
-	padding-top: 50px;
-    padding-bottom: 50px;
+	padding: 50px 70px;
     background: url('../img/bg-01.jpg') no-repeat center;
     background-size: cover;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.table-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .table-container {
-	width: 66.6%;
+	/*width: 66.6%;*/
+    flex-grow: 1;
 }
 
 .table-wrapper {
@@ -186,7 +193,7 @@ body {
 .fund-type,
 .fund-manager,
 .fund-route {
-    width: 19%;
+    width: 23%;
     height: 56px;
     line-height: 56px;
     margin-right: 1%;
@@ -217,7 +224,6 @@ body {
 }
 
 .bounds {
-    width: 97%;
     height: 56px;
     line-height: 56px;
     margin: 16px auto;
@@ -313,7 +319,7 @@ body {
 
 .figure-caption {
     height: 70px;
-    padding: 15px 20px;
+    padding: 5px 20px;
     margin-left: 22px;
     background: white;
     position: relative;
@@ -330,6 +336,7 @@ body {
 }
 
 .article-subtitle {
+    display: block;
     font-size: 14px;
 }
 
@@ -415,7 +422,7 @@ body {
 
 /* Survey */
 .survey-header {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .survey-title {
@@ -445,7 +452,7 @@ body {
 .guides-article .guides-image {
     display: block;
     height: 140px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     /*background-color: #fed014;*/
 }
 
@@ -466,7 +473,7 @@ body {
 }
 
 .guides-footer .more {
-    top: -2px;
+    top: 7px;
     left: 0;
 }
 
