@@ -1,0 +1,108 @@
+.report-btn {
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background-color: #062a4e;
+  border-radius: 100px; }
+
+.report-input {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  padding-right: 20px;
+  padding-left: 20px; }
+  .report-input::-webkit-input-placeholder {
+    color: #455a64; }
+  .report-input::-moz-placeholder {
+    color: #455a64; }
+  .report-input:-ms-input-placeholder {
+    color: #455a64; }
+  .report-input::placeholder {
+    color: #455a64; }
+
+/* Report */
+.report-section {
+  padding-top: 45px;
+  padding-right: 50px;
+  padding-bottom: 34px;
+  padding-left: 50px;
+  background-color: rgba(254, 208, 20, 0.7); }
+  @media screen and (max-width: 414px) {
+    .report-section {
+      padding: 20px 10px; } }
+
+.report-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600; }
+  @media screen and (max-width: 414px) {
+    .report-title {
+      font-size: 20px; } }
+
+.report-form {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -moz-justify-content: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 414px) {
+    .report-form {
+      margin-top: 20px; } }
+
+.report-form-item {
+  width: 31%;
+  height: 56px;
+  margin-bottom: 16px; }
+  @media screen and (max-width: 414px) {
+    .report-form-item {
+      width: 100%; } }
+
+.report-form-item-dd {
+  width: 31%;
+  height: 56px;
+  line-height: 56px;
+  margin-right: 0;
+  margin-bottom: 16px;
+  padding-right: 19px;
+  background-color: white;
+  position: relative; }
+  @media screen and (max-width: 414px) {
+    .report-form-item-dd {
+      width: 100%;
+      margin-right: 0; } }
+  .report-form-item-dd .ddl-arrow-container {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    position: absolute;
+    left: 0;
+    background-color: #eceff1; }
+  .report-form-item-dd .ddl-arrow-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/ddl-arrow.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 16px;
+    left: 16px; }
+
+/*# sourceMappingURL=section-report.css.map */

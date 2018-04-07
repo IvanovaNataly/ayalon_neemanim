@@ -1,0 +1,164 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "compatibility.scss";
+@import "elements.scss";
+
+/* Table section*/
+
+.table-section {
+    padding: 40px 70px;
+    background: url('../img/bg-01.jpg') no-repeat center;
+    background-size: cover;
+    @include flexbox;
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    @media screen and (max-width: $break-point-p) {
+        padding: 20px 10px;
+    }
+}
+
+.table-section-title {
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (max-width: $break-point-p) {
+        font-size: 20px;
+    }
+}
+
+.table-container {
+    flex-grow: 1;
+}
+
+.table-sidebar {
+    width: 300px;
+    margin-right: 20px;
+    @media screen and (max-width: $break-point-p) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+/* Table container */
+.table-wrapper {
+    max-width: $table-max-width;
+    margin-bottom: $block-margin;
+}
+
+.table-filters {
+    @include flexbox;
+    @include flex-wrap;
+    @include justify-content;
+}
+
+.dd-filter {
+    @include ddFilter;
+}
+
+.search-fund {
+    @include ddFilter (31%, 0);
+}
+
+.bounds {
+    height: $input-height;
+    line-height: $input-height;
+    margin-bottom: $block-margin;
+    padding-right: 20px;
+    background-color: white;
+}
+
+//Table
+.table-list {
+
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 0;
+    background-color: rgba(236, 239, 241, 0.7);
+    cursor: pointer;
+}
+
+.table-row:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.table-row:hover {
+    background-color: rgba(254, 208, 19, 0.7);
+}
+
+.table-row.table-header {
+    height: 60px;
+    line-height: 60px;
+    background-color: $main-color;
+    color: #f7f7f7;
+}
+
+.table-cell {
+    width: 12%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* Articles sidebar */
+.article {
+    &-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    &-item {
+        width: 100%;
+        margin-bottom: $block-margin;
+        overflow: hidden;
+        &:nth-child(1) .article-img {
+            background: url('../img/box-cover-01.jpeg') no-repeat center;
+        }
+
+        &:nth-child(2) .article-img {
+            background: url('../img/box-cover-02.jpeg') no-repeat center;
+        }
+
+        &:nth-child(3) .article-img {
+            background: url('../img/box-cover-03.jpeg') no-repeat center;
+        }
+    }
+
+    &-link {
+        display: block;
+    }
+
+    &-figure {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &-img {
+        display: block;
+        height: 160px;
+        background-size: cover;
+    }
+
+    &-caption {
+        height: 70px;
+        padding: 5px 20px 5px 10px;
+        background: white;
+        position: relative;
+        .more {
+            top: 13px;
+            left: 10px;
+        }
+    }
+
+    &-title {
+        font-size: 18px;
+    }
+
+    &-subtitle {
+        font-size: 14px;
+    }
+}

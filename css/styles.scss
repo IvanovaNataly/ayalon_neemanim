@@ -1,0 +1,145 @@
+//Ayalon Neemanim Project
+//Kav Mashva
+//by Praedicta
+
+//Ivanova Natalia, 2018
+
+@import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+@import "colors.scss";
+@import "variables.scss";
+@import "reset.scss";
+@import "compatibility.scss";
+@import "elements.scss";
+
+
+.sr-only {
+    display: none;
+}
+
+.more{
+    width: 45px;
+    height: 45px;
+    background: url('../img/more.svg') no-repeat center;
+    position: absolute;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Common */
+html{
+    font-size: 14px;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $secondary-font-color;
+    line-height: normal;
+    background-color: $white;
+}
+
+
+
+/* Main content */
+.main-content {
+    width: 90%;
+    max-width: $max-width;
+    margin: 0 auto;
+    margin-top: 5px; /*to delete*/
+    @media screen and (max-width: $break-point-p) {
+        width: 100%;
+    }
+}
+
+/* Subscribe */
+.subscribe-section {
+    @include flexbox;
+    @include flex-wrap;
+    margin-bottom: 50px;
+    position: relative;
+    @media screen and (max-width: $break-point-p) {
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-banner {
+    text-align: center;
+    color: $white;
+    width: 66.6%;
+    height: 165px;
+    line-height: 165px;
+    @media screen and (max-width: $break-point-p) {
+        width: 100%;
+    }
+}
+
+.subscribe-invitation {
+    width: 33.3%;
+    padding: 30px 50px;
+    background-color: $main-color;
+    @media screen and (max-width: $break-point-p) {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+.subscribe-title {
+    font-size: 16px;
+    color: #fff;
+}
+
+.subscribe-opacity {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), linear-gradient($main-color, $main-color);
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.subscribe-link {
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    color: $primary-font-color;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: $contrast-color;
+}
+
+/* Footer */
+.footer {
+    height: 150px;
+    line-height: 150px;
+    background-color: #edf0f1;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item:not(:last-child):after {
+    content: "|";
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer-item-link {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-item-social {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

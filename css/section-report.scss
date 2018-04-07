@@ -1,0 +1,58 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "compatibility.scss";
+@import "elements.scss";
+
+/* Report */
+
+.report-section {
+    padding-top: 45px;
+    padding-right: 50px;
+    padding-bottom: 50px - $block-margin;
+    padding-left: 50px;
+    background-color: $contrast-color-bg;
+    @media screen and (max-width: $break-point-p) {
+        padding: 20px 10px;
+    }
+}
+
+.report-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    @media screen and (max-width: $break-point-p) {
+        font-size: 20px;
+    }
+}
+
+.report-form {
+    margin-top: 30px;
+    @include flexbox;
+    @include justify-content(space-evenly);
+    @include align-items(center);
+    @include flex-wrap;
+    @media screen and (max-width: $break-point-p) {
+        margin-top: 20px;
+    }
+}
+
+.report-form-item {
+    width: 31%;
+    height: $input-height;
+    margin-bottom: $block-margin;
+    @media screen and (max-width: $break-point-p) {
+       width: 100%;
+    }
+}
+
+.report-form-item-dd {
+    @include ddFilter(31%, 0);
+}
+
+.report-btn {
+    @extend %btn-primary;
+}
+
+.report-input {
+    @extend %input;
+}

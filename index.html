@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8" />
 	<title>Kav HaMashve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section-table.css">
+    <link rel="stylesheet" href="css/section-report.css">
+    <link rel="stylesheet" href="css/section-reviews.css">
 </head>
 
 <body>
@@ -14,70 +19,59 @@
 			</div>
 
 			<nav class="main-nav">
-                <div class="main-nav-wrapper">
+                <!--<div class="main-nav-wrapper">-->
                     <ul class="nav-list">
                         <li class="nav-list-item">
-                            <a class="nav-list-link">
-                                ראשי
-                            </a>
+                            <a href="#" class="nav-list-link">ראשי</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="nav-list-link">
-                                מי אנחנו
-                            </a>
+                            <a href="#" class="nav-list-link">מי אנחנו</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="nav-list-link">
-                                סקירות
-                            </a>
+                            <a href="#" class="nav-list-link">סקירות</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="nav-list-link">
-                                מדריכים
-                            </a>
+                            <a href="#" class="nav-list-link">מדריכים</a>
                         </li>
                         <li class="nav-list-item">
-                            <a class="nav-list-link">
-                                צור קשר
-                            </a>
+                            <a href="#" class="nav-list-link">צור קשר</a>
+                        </li>
+                        <li class="nav-list-item nav-list-item-last">
+                            <a href="#" class="login-btn">כניסת לקוחות רשומים</a>
                         </li>
                     </ul>
-
-                    <button class="login-btn">
-                        כניסת לקוחות רשומים
-                    </button>
-                </div>
+                <!--</div>-->
 			</nav>
 		</header>
 
 		<main class="main-content">
 			<section class="table-section">
                 <h1 class="table-section-title">רוצה לראות את נתוני הקופה שלך?</h1>
-				<div class="table-container">
+				<article class="table-container">
                     <div class="table-wrapper">
                         <div class="table-filters">
-                            <div class="search-fund">
+                            <div class="dd-filter search-fund">
                                 <span>חיפוש קופה</span>
                                 <span class="ddl-arrow-container">
 								<span class="ddl-arrow-icon"></span>
 							</span>
                             </div>
 
-                            <div class="fund-type">
+                            <div class="dd-filter">
                                 <span>סוג קופה</span>
                                 <span class="ddl-arrow-container">
 								<span class="ddl-arrow-icon"></span>
 							</span>
                             </div>
 
-                            <div class="fund-manager">
+                            <div class="dd-filter">
                                 <span>מנהל</span>
                                 <span class="ddl-arrow-container">
 								<span class="ddl-arrow-icon"></span>
 							</span>
                             </div>
 
-                            <div class="fund-route">
+                            <div class="dd-filter">
                                 <span>מסלול</span>
                                 <span class="ddl-arrow-container">
 								<span class="ddl-arrow-icon"></span>
@@ -200,71 +194,53 @@
                             </li>
                         </ul>
                     </div>
-				</div>
+				</article>
 
-				<div class="table-sidebar">
+				<aside class="table-sidebar">
 					<div class="articles-container">
-						<ul class="articles-list">
+						<ul class="article-list">
 							<li class="article-item">
 								<a class="article-link">
-									<figure class="article-figure">
-									  <img class="article-img" src="" alt="">
-									  <figcaption class="figure-caption">
-									  	<h3 class="article-title">
-										  	כותרת ראשית
-									  	</h3>
-								  		<span class="article-subtitle">
-								  			כותרת משנה 
-								  		</span>
-                                          <span class="article-subtitle">
-								  			כותרת משנה
-								  		</span>
-                                          <i class="more"></i>
-									  </figcaption>
-									</figure>
+                                    <figure class="article-figure">
+                                        <img class="article-img" src="" alt="">
+                                        <figcaption class="article-caption">
+                                            <h3 class="article-title">כותרת ראשית</h3>
+                                            <p class="article-subtitle">כותרת משנה</p>
+                                            <p class="article-subtitle">כותרת משנה</p>
+                                            <i class="more"></i>
+                                        </figcaption>
+                                    </figure>
 								</a>
 							</li>
 							<li class="article-item">
 								<a class="article-link">
-									<figure class="article-figure">
-									  <img class="article-img" src="" alt="">
-									  <figcaption class="figure-caption">
-									  	<h3 class="article-title">
-										  	כותרת ראשית
-									  	</h3>
-								  		<span class="article-subtitle">
-								  			כותרת משנה
-								  		</span>
-                                          <span class="article-subtitle">
-								  			כותרת משנה
-								  		</span>
-                                          <i class="more"></i>
-									  </figcaption>
-									</figure>
+                                    <figure class="article-figure">
+                                        <img class="article-img" src="" alt="">
+                                        <figcaption class="article-caption">
+                                            <h3 class="article-title">כותרת ראשית</h3>
+                                            <p class="article-subtitle">כותרת משנה</p>
+                                            <p class="article-subtitle">כותרת משנה</p>
+                                            <i class="more"></i>
+                                        </figcaption>
+                                    </figure>
 								</a>
 							</li>
 							<li class="article-item">
 								<a class="article-link">
-									<figure class="article-figure">
-									  <img class="article-img" src="" alt="">
-									  <figcaption class="figure-caption">
-									  	<h3 class="article-title">
-										  	כותרת ראשית
-									  	</h3>
-								  		<span class="article-subtitle">
-								  			כותרת משנה 
-								  		</span>
-                                          <span class="article-subtitle">
-								  			כותרת משנה
-								  		</span>
-                                          <i class="more"></i>
-									  </figcaption>
-									</figure>
+                                    <figure class="article-figure">
+                                        <img class="article-img" src="" alt="">
+                                        <figcaption class="article-caption">
+                                            <h3 class="article-title">כותרת ראשית</h3>
+                                            <p class="article-subtitle">כותרת משנה</p>
+                                            <p class="article-subtitle">כותרת משנה</p>
+                                            <i class="more"></i>
+                                        </figcaption>
+                                    </figure>
 								</a>
 							</li>
 						</ul>
 					</div>
-				</div>
+				</aside>
 			</section>
 
 			<section class="report-section">
@@ -272,7 +248,7 @@
 					רוצה לקבל דוח על הקופות שלך בהשוואה לאחרות
 				</h2>
                 <form action="" class="report-form">
-                    <div class="search-fund report-form-item">
+                    <div class="report-form-item report-form-item-dd">
                         <span>בחר קופה</span>
                         <span class="ddl-arrow-container">
                             <span class="ddl-arrow-icon"></span>
@@ -281,83 +257,82 @@
 
                     <div class="report-form-item">
                         <label for="name" class="sr-only">מספר טלפון סלולרי</label>
-                        <input class="request-input" type="text" id="name" name="name" placeholder="מס' טלפון סלולרי">
+                        <input class="report-input" type="text" id="name" name="name" placeholder="מס' טלפון סלולרי">
                     </div>
 
-                    <input class="request-btn report-form-item" type="submit" name="submit" value="שלח">
+                    <button class="report-form-item report-btn" type="submit" name="submit">שלח</button>
                 </form>
 			</section>
 
-			<section class="reviews-section">
+			<!--<section class="reviews-section">-->
+                <!--<div class="reviews-wrapper">-->
+                    <!--<div class="reviews-block survey-subsection">-->
+                        <!--<h2 class="reviews-header">סקירות אחרונות</h2>-->
+                        <!--<article class="reviews-article">-->
+                            <!--<header class="survey-header">-->
+                                <!--<h3 class="survey-title">כותרת ראשית</h3>-->
+                                <!--<p class="survey-subheader">כותרת משנה</p>-->
+                                <!--<p class="survey-subheader">כותרת משנה</p>-->
+                            <!--</header>-->
+                            <!--<p class="survey-content">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף.</p>-->
+                            <!--<a href="" class="survey-link">עוד על הנושא</a>-->
+                        <!--</article>-->
+                        <!--<article class="reviews-article">-->
+                            <!--<header class="survey-header">-->
+                                <!--<h3 class="survey-title">כותרת ראשית</h3>-->
+                                <!--<p class="survey-subheader">כותרת משנה</p>-->
+                                <!--<p class="survey-subheader">כותרת משנה</p>-->
+                            <!--</header>-->
+                            <!--<p class="survey-content">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף.</p>-->
+                            <!--<a href="" class="survey-link">עוד על הנושא</a>-->
+                        <!--</article>-->
+                    <!--</div>-->
+                    <!--<div class="reviews-block guides-subsection">-->
+                        <!--<h2 class="reviews-header">מדריכים פופולריים</h2>-->
+                        <!--<article class="guides-article">-->
+                            <!--<img src="" alt="" class="guides-image">-->
+                            <!--<footer class="guides-footer">-->
+                                <!--<h3 class="guides-title">כותרת ראשית</h3>-->
+                                <!--<p class="guides-subheader">כותרת משנה</p>-->
+                                <!--<p class="guides-subheader">כותרת משנה</p>-->
+                                <!--<i class="more"></i>-->
+                            <!--</footer>-->
+                        <!--</article>-->
+                        <!--<article class="guides-article">-->
+                            <!--<img src="" alt="" class="guides-image">-->
+                            <!--<footer class="guides-footer">-->
+                                <!--<h3 class="guides-title">כותרת ראשית</h3>-->
+                                <!--<p class="guides-subheader">כותרת משנה</p>-->
+                                <!--<p class="guides-subheader">כותרת משנה</p>-->
+                                <!--<i class="more"></i>-->
+                            <!--</footer>-->
+                        <!--</article>-->
+                    <!--</div>-->
+                <!--</div>-->
 
-                <div class="reviews-wrapper">
-                    <div class="reviews-block survey-subsection">
-                        <h2 class="reviews-header">סקירות אחרונות</h2>
-                        <article class="reviews-article">
-                            <header class="survey-header">
-                                <h3 class="survey-title">כותרת ראשית</h3>
-                                <p class="survey-subheader">כותרת משנה</p>
-                                <p class="survey-subheader">כותרת משנה</p>
-                            </header>
-                            <p class="survey-content">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף.</p>
-                            <a href="" class="survey-link">עוד על הנושא</a>
-                        </article>
-                        <article class="reviews-article">
-                            <header class="survey-header">
-                                <h3 class="survey-title">כותרת ראשית</h3>
-                                <p class="survey-subheader">כותרת משנה</p>
-                                <p class="survey-subheader">כותרת משנה</p>
-                            </header>
-                            <p class="survey-content">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף.</p>
-                            <a href="" class="survey-link">עוד על הנושא</a>
-                        </article>
-                    </div>
-                    <div class="reviews-block guides-subsection">
-                        <h2 class="reviews-header">מדריכים פופולריים</h2>
-                        <article class="guides-article">
-                            <img src="" alt="" class="guides-image">
-                            <footer class="guides-footer">
-                                <h3 class="guides-title">כותרת ראשית</h3>
-                                <p class="guides-subheader">כותרת משנה</p>
-                                <p class="guides-subheader">כותרת משנה</p>
-                                <i class="more"></i>
-                            </footer>
-                        </article>
-                        <article class="guides-article">
-                            <img src="" alt="" class="guides-image">
-                            <footer class="guides-footer">
-                                <h3 class="guides-title">כותרת ראשית</h3>
-                                <p class="guides-subheader">כותרת משנה</p>
-                                <p class="guides-subheader">כותרת משנה</p>
-                                <i class="more"></i>
-                            </footer>
-                        </article>
-                    </div>
-                </div>
+                <!--<form action="" class="request-subsection">-->
+                    <!--<h3 class="request-header">-->
+                        <!--<p class="request-header-line">רוצה לדבר עם המומחים שלנו?</p>-->
+                        <!--<p class="request-header-line">השאר פרטים</p>-->
+                    <!--</h3>-->
 
-                <form action="" class="request-subsection">
-                    <h3 class="request-header">
-                        <p class="request-header-line">רוצה לדבר עם המומחים שלנו?</p>
-                        <p class="request-header-line">השאר פרטים</p>
-                    </h3>
+                    <!--<label for="name" class="sr-only">שם</label>-->
+                    <!--<input class="request-input" type="text" id="name" name="name" placeholder="שם מלא">-->
 
-                    <label for="name" class="sr-only">שם</label>
-                    <input class="request-input" type="text" id="name" name="name" placeholder="שם מלא">
+                    <!--<label for="email" class="sr-only">דוא"ל</label>-->
+                    <!--<input class="request-input" type="text" id="email" name="email" placeholder='דוא"ל'>-->
 
-                    <label for="email" class="sr-only">דוא"ל</label>
-                    <input class="request-input" type="text" id="email" name="email" placeholder='דוא"ל'>
+                    <!--<label for="telephone" class="sr-only">טלפון</label>-->
+                    <!--<input class="request-input" type="text" id="telephone" name="telephone" placeholder="טלפון">-->
 
-                    <label for="telephone" class="sr-only">טלפון</label>
-                    <input class="request-input" type="text" id="telephone" name="telephone" placeholder="טלפון">
+                    <!--<div class="request-check-container">-->
+                        <!--<input class="request-check" type="checkbox" id="approval" name="approval" checked>-->
+                        <!--<label for="approval" class="request-check-label">מאשר קבלת המייל</label>-->
+                    <!--</div>-->
 
-                    <div class="request-check-container">
-                        <input class="request-check" type="checkbox" id="approval" name="approval" checked>
-                        <label for="approval" class="request-check-label">מאשר קבלת המייל</label>
-                    </div>
-
-                    <input class="request-btn" type="submit" name="submit" value="שלח">
-                </form>
-			</section>
+                    <!--<input class="request-btn" type="submit" name="submit" value="שלח">-->
+                <!--</form>-->
+			<!--</section>-->
 
             <section class="subscribe-section">
                 <div class="subscribe-banner">SOME BANNER</div>
