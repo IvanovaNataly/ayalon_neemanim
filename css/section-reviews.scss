@@ -1,44 +1,52 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "reset.scss";
+@import "compatibility.scss";
+@import "elements.scss";
+
 /* Reviews */
 .reviews-section {
-    display: flex;
     margin-bottom: 50px;
     background: url('../img/bg-02.jpg') no-repeat center;
     background-size: cover;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+    @include flexbox;
+    @include flex-wrap;
+    @include justify-content(space-evenly);
 }
 
 .reviews-wrapper {
-    display: flex;
-    width: 66.6%;
-    padding-top: 30px;
+    width: 64%;
     padding-bottom: 50px;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    @include flexbox;
+    @include flex-wrap;
+    @include justify-content(space-evenly);
+    @media screen and (max-width: $break-point-p) {
+        width: 100%;
+    }
 }
 
-.reviews-block {
+.request-wrapper {
+    width: 36%;
+    @media screen and (max-width: $break-point-p) {
+        width: 300px;
+    }
 }
 
 .reviews-article {
-    width: 340px;
-    height: 210px;
+    @extend %article;
     padding: 20px;
-    background-color: #fff;
-}
-.reviews-article:not(:last-child) {
-    margin-bottom: 20px;
 }
 
 .reviews-header {
     text-align: center;
     font-size: 25px;
     font-weight: 600;
-    color: #fff;
+    color: $white;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-/* Survey */
+    /* Survey */
 .survey-header {
     margin-bottom: 8px;
 }
@@ -51,67 +59,50 @@
 .survey-link {
     font-weight: bold;
     margin-top: 20px;
-}
-
-.survey-link:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Guides */
-.guides-article {
-    width: 340px;
-    height: 210px;
-    background-color: #fff;
-}
-.guides-article:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-.guides-article .guides-image {
-    display: block;
-    height: 140px;
-    margin-bottom: 5px;
-    /*background-color: $contrast-color;*/
-}
-
-.guides-article:nth-child(2) .guides-image {
-    background: url('../img/box-cover-001.jpeg') no-repeat center;
-    background-size: cover;
+.guides-subsection {
+    .article-item {
+        width: 340px;
+        @media screen and (max-width: $break-point-p) {
+            width: 280px;
+        }
+        &:nth-child(1) .article-img {
+            background: url('../img/box-cover-001.jpeg') no-repeat center;
+            background-size: cover;
+        }
+        &:nth-child(2) .article-img {
+            background: url('../img/box-cover-002.jpeg') no-repeat center;
+            background-size: cover;
+        }
+    }
 }
 
-.guides-article:nth-child(3) .guides-image {
-    background: url('../img/box-cover-002.jpeg') no-repeat center;
-    background-size: cover;
-}
-
-.guides-footer {
-    padding-right: 20px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.guides-footer .more {
-    top: 7px;
-    left: 10px;
-}
-
-.guides-title {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
 
 /* Request */
 .request-subsection {
+    height: calc(100% - 20px - 20px);
     text-align: center;
-    width: 33.3%;
     padding: 30px 50px;
     margin: 20px 0 20px 20px;
     background-color: rgba(255, 255, 255, 0.4);
+    @media screen and (max-width: $break-point-p) {
+        height: auto;
+        margin: 0;
+        padding: 30px 20px;
+    }
 }
 
 .request-header {
     font-size: 22px;
     font-weight: 600;
+    @media screen and (max-width: $break-point-p) {
+        font-size: 20px;
+    }
 }
 
 .request-input {
@@ -121,10 +112,7 @@
     padding-right: 20px;
     padding-left: 20px;
     margin-top: 20px;
-    background-color: #f7f7f7;
-}
-.request-input::placeholder {
-    color: #455a64;
+    @include placeholder($light-font-color);
 }
 
 .request-check-container {
@@ -133,7 +121,7 @@
 }
 
 .request-check-label {
-    color: #fff;
+    color: $white;
     margin-right: 10px;
 }
 

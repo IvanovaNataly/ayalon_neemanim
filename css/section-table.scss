@@ -13,7 +13,7 @@
     @include justify-content(center);
     @include flex-wrap(wrap);
     @media screen and (max-width: $break-point-p) {
-        padding: 20px 10px;
+        padding: 20px;
     }
 }
 
@@ -29,14 +29,16 @@
 
 .table-container {
     flex-grow: 1;
+    @media screen and (max-width: $break-point-p) {
+       width: 100%;
+    }
 }
 
 .table-sidebar {
     width: 300px;
     margin-right: 20px;
     @media screen and (max-width: $break-point-p) {
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 0;
     }
 }
 
@@ -105,11 +107,6 @@
 
 /* Articles sidebar */
 .article {
-    &-list {
-        list-style: none;
-        padding: 0;
-    }
-
     &-item {
         width: 100%;
         margin-bottom: $block-margin;
@@ -145,7 +142,7 @@
 
     &-caption {
         height: 70px;
-        padding: 5px 20px 5px 10px;
+        padding: 10px 20px 5px 10px;
         background: white;
         position: relative;
         .more {
@@ -156,6 +153,7 @@
 
     &-title {
         font-size: 18px;
+        margin-bottom: 5px;
     }
 
     &-subtitle {
