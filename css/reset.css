@@ -54,4 +54,8 @@ a {
   color: inherit;
   text-decoration: none; }
 
+button {
+  border: none;
+  background-color: transparent; }
+
 /*# sourceMappingURL=reset.css.map */
