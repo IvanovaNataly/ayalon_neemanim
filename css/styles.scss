@@ -119,18 +119,32 @@ body {
 .footer {
     height: 150px;
     line-height: 150px;
-    background-color: #edf0f1;
+    background-color: $footer-bg;
+    @media screen and (max-width: $break-point-p) {
+        height: auto;
+        line-height: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 .footer-list {
-    display: flex;
-    justify-content: center;
+    @include flexbox;
+    @include justify-content(center);
+    @include flex-wrap;
 }
 
-.footer-item:not(:last-child):after {
-    content: "|";
-    padding-right: 15px;
-    padding-left: 15px;
+.footer-item {
+    &:not(:last-child):after {
+        content: "|";
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    @media screen and (max-width: $break-point-p) {
+        &:first-child:after {
+            display: none;
+        }
+    }
 }
 
 .footer-item-link {
