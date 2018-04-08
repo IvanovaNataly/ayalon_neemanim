@@ -123,7 +123,7 @@ button {
   width: 36%; }
   @media screen and (max-width: 414px) {
     .request-wrapper {
-      width: 300px; } }
+      width: 100%; } }
 
 .reviews-article {
   padding: 20px; }
