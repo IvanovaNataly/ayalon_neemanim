@@ -1,0 +1,28 @@
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td {
+    //font-size: 12px;
+    //line-height: 46px;
+    text-align: right;
+}
+//
+//table tbody tr td {
+//    color: #333;
+//    padding: 14px 10px;
+//}
+
+table td, table th {
+    text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+    div.table-wrapper div.scrollable {
+        margin-right: 35%;
+        margin-left: 0%;
+    }
+    .pinned {
+        right: 0;
+    }
+}

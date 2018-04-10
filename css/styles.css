@@ -182,8 +182,8 @@ body {
 
 .footer-item:not(:last-child):after {
   content: "|";
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 2vw;
+  padding-left: 2vw; }
 @media screen and (max-width: 414px) {
   .footer-item:first-child:after {
     display: none; } }
@@ -193,8 +193,9 @@ body {
   height: 20px; }
 
 .footer-item-social {
-  display: block;
+  display: inline-block;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=styles.css.map */

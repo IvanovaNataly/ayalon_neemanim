@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;iBAIkB;EAGd,UAAU,EAAE,KAAK;;AAQrB,kBAAmB;EACf,UAAU,EAAE,KAAK;;AAGrB,yCAA0C;EACtC,gCAAiC;IAC7B,YAAY,EAAE,GAAG;IACjB,WAAW,EAAE,EAAE;;EAEnB,OAAQ;IACJ,KAAK,EAAE,CAAC",
+"sources": ["responsive-table-patches.scss"],
+"names": [],
+"file": "responsive-table-patches.css"
+}

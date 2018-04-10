@@ -1,0 +1,19 @@
+table thead tr th,
+table tfoot tr th,
+table tbody tr td,
+table tr td,
+table tfoot tr td {
+  text-align: right; }
+
+table td, table th {
+  text-align: right; }
+
+@media only screen and (max-width: 767px) {
+  div.table-wrapper div.scrollable {
+    margin-right: 35%;
+    margin-left: 0%; }
+
+  .pinned {
+    right: 0; } }
+
+/*# sourceMappingURL=responsive-table-patches.css.map */
