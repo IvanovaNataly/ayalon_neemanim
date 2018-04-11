@@ -214,10 +214,12 @@
 .responsive-table-wrapper {
   width: 100%; }
 
+.responsive-table {
+  width: 100%; }
+
 .table-row {
-  display: flex;
-  justify-content: space-around;
-  padding: 6px 0;
+  height: 40px;
+  line-height: 40px;
   background-color: rgba(236, 239, 241, 0.7);
   cursor: pointer; }
 
@@ -228,15 +230,9 @@
   background-color: rgba(254, 208, 19, 0.7); }
 
 .table-row.table-header {
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   background-color: #062a4e;
   color: #f7f7f7; }
-
-.table-cell {
-  width: 12%;
-  height: 40px;
-  line-height: 40px;
-  text-align: center; }
 
 /*# sourceMappingURL=section-table.css.map */
