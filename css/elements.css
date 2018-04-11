@@ -1,3 +1,29 @@
-
+.article-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  overflow: hidden; }
+.article-link {
+  display: block; }
+.article-figure {
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+.article-img {
+  display: block;
+  height: 160px;
+  background-size: cover; }
+.article-caption {
+  height: 70px;
+  padding: 10px 20px 5px 10px;
+  background: white;
+  position: relative; }
+  .article-caption .more {
+    top: 13px;
+    left: 10px; }
+.article-title {
+  font-size: 18px; }
+.article-subtitle {
+  font-size: 14px; }
 
 /*# sourceMappingURL=elements.css.map */

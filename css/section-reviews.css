@@ -66,18 +66,50 @@ button {
   background-color: #062a4e;
   border-radius: 100px; }
 
-.reviews-article {
-  width: 340px;
-  height: 230px;
-  background-color: #fff; }
-  .reviews-article:not(:last-child) {
-    margin-bottom: 16px; }
-  @media screen and (max-width: 414px) {
-    .reviews-article {
-      width: 100%;
-      height: auto; } }
+.request-input {
+  font-size: 16px;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  padding-right: 20px;
+  padding-left: 20px; }
+  .request-input::-webkit-input-placeholder {
+    color: #455a64; }
+  .request-input::-moz-placeholder {
+    color: #455a64; }
+  .request-input:-ms-input-placeholder {
+    color: #455a64; }
+  .request-input::placeholder {
+    color: #455a64; }
 
-/* Reviews */
+.article-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  overflow: hidden; }
+.article-link {
+  display: block; }
+.article-figure {
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+.article-img {
+  display: block;
+  height: 160px;
+  background-size: cover; }
+.article-caption {
+  height: 70px;
+  padding: 10px 20px 5px 10px;
+  background: white;
+  position: relative; }
+  .article-caption .more {
+    top: 13px;
+    left: 10px; }
+.article-title {
+  font-size: 18px; }
+.article-subtitle {
+  font-size: 14px; }
+
 .reviews-section {
   margin-bottom: 50px;
   background: url("../img/bg-02.jpg") no-repeat center;
@@ -97,9 +129,10 @@ button {
   -moz-justify-content: space-evenly;
   justify-content: space-evenly; }
 
+/* Reviews */
 .reviews-wrapper {
   width: 64%;
-  padding-bottom: 50px;
+  padding-bottom: calc(50px - 16px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -124,8 +157,13 @@ button {
     .request-wrapper {
       width: 100%; } }
 
-.reviews-article {
-  padding: 20px; }
+.reviews-block {
+  width: 42%; }
+  @media screen and (max-width: 414px) {
+    .reviews-block {
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px; } }
 
 .reviews-header {
   text-align: center;
@@ -136,38 +174,13 @@ button {
   margin-bottom: 30px; }
 
 /* Survey */
-.survey-header {
-  margin-bottom: 8px; }
-
-.survey-title {
-  font-size: 18px;
-  margin-bottom: 5px; }
-
-.survey-link {
-  font-weight: bold;
-  margin-top: 20px; }
-  .survey-link:hover {
-    text-decoration: underline; }
-
 /* Guides */
-.guides-subsection .article-item {
-  width: 340px; }
-  @media screen and (max-width: 414px) {
-    .guides-subsection .article-item {
-      width: 280px; } }
-  .guides-subsection .article-item:nth-child(1) .article-img {
-    background: url("../img/box-cover-001.jpeg") no-repeat center;
-    background-size: cover; }
-  .guides-subsection .article-item:nth-child(2) .article-img {
-    background: url("../img/box-cover-002.jpeg") no-repeat center;
-    background-size: cover; }
-
 /* Request */
 .request-subsection {
-  height: calc(100% - 20px - 20px);
+  height: calc(100% - 20px - 50px);
   text-align: center;
   padding: 30px 50px;
-  margin: 20px 0 20px 20px;
+  margin: 20px 0 50px 20px;
   background-color: rgba(255, 255, 255, 0.4); }
   @media screen and (max-width: 414px) {
     .request-subsection {
@@ -183,20 +196,7 @@ button {
       font-size: 20px; } }
 
 .request-input {
-  width: 100%;
-  height: 56px;
-  line-height: 56px;
-  padding-right: 20px;
-  padding-left: 20px;
   margin-top: 20px; }
-  .request-input::-webkit-input-placeholder {
-    color: #455a64; }
-  .request-input::-moz-placeholder {
-    color: #455a64; }
-  .request-input:-ms-input-placeholder {
-    color: #455a64; }
-  .request-input::placeholder {
-    color: #455a64; }
 
 .request-check-container {
   text-align: right;

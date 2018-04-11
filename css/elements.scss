@@ -2,42 +2,6 @@
 @import "variables.scss";
 @import "compatibility.scss";
 
-@mixin ddFilter($width: 22%, $rightMargin : 1%, $bottomMargin: 16px, $width-p: 100%) {
-    width: $width;
-    height: $input-height;
-    line-height: $input-height;
-    margin-right: $rightMargin;
-    margin-bottom: $bottomMargin;
-    padding-right: 19px;
-    background-color: white;
-    position: relative;
-    @media screen and (max-width: $break-point-p) {
-        width: $width-p;
-        margin-right: 0;
-    }
-
-    .ddl-arrow-container {
-        display: inline-block;
-        width: $input-height;
-        height: $input-height;
-        line-height: $input-height;
-        position: absolute;
-        left: 0;
-        background-color: #eceff1;
-    }
-
-    .ddl-arrow-icon {
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background: url('../img/ddl-arrow.png') no-repeat center;
-        background-size: cover;
-        position: absolute;
-        top: 16px;
-        left: 16px;
-    }
-}
-
 %btn-primary {
     font-size: 14px;
     color: $white;
@@ -49,6 +13,7 @@
 }
 
 %input {
+    font-size: 16px;
     width: 100%;
     height: $input-height;
     line-height: $input-height;
@@ -57,15 +22,120 @@
     @include placeholder($light-font-color);
 }
 
-%article {
-    width: 340px;
-    height: 230px;
-    background-color: $white;
-    &:not(:last-child) {
-        margin-bottom: $block-margin;
-    }
-    @media screen and (max-width: $break-point-p) {
+@mixin article {
+    &-item {
         width: 100%;
         height: auto;
+        margin-bottom: $block-margin;
+        overflow: hidden;
+    }
+
+    &-link {
+        display: block;
+    }
+
+    &-figure {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &-img {
+        display: block;
+        height: 160px;
+        background-size: cover;
+    }
+
+    &-caption {
+        height: 70px;
+        padding: 10px 20px 5px 10px;
+        background: white;
+        position: relative;
+        .more {
+            top: 13px;
+            left: 10px;
+        }
+    }
+
+    &-title {
+        font-size: 18px;
+    }
+
+    &-subtitle {
+        font-size: 14px;
     }
 }
+.article {
+    @include article;
+}
+
+//Custom select
+@mixin select($width: 22%, $bottomMargin: 16px, $width-p: 100%) {
+    width: $width;
+    height: $input-height;
+    line-height: $input-height;
+    margin-bottom: $bottomMargin;
+    background-color: white;
+    position: relative;
+    @media screen and (max-width: $break-point-p) {
+        width: $width-p;
+        margin-right: 0;
+    }
+
+    .select {
+        display: inline-block;
+        font-family: $font-family;
+        font-size: 16px;
+        color: $primary-font-color;
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        outline: 0;
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        vertical-align: top;
+        position: relative;
+        z-index: 1;
+    }
+
+    .select::-ms-expand {
+        display: none;
+    }
+
+    .select:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    .select-arrow {
+        display: inline-block;
+        width: $input-height;
+        height: $input-height;
+        line-height: $input-height;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $select-bg;
+        background-image: url('../img/ddl-arrow.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 24px 24px;
+    }
+
+    .select:hover ~ .select-arrow,
+    .select:focus ~ .select-arrow {
+
+    }
+
+    .select:disabled ~ .select-arrow {
+
+    }
+}
+
+
+

@@ -54,12 +54,12 @@
     @include justify-content;
 }
 
-.dd-filter {
-    @include ddFilter;
+.select-holder {
+    @include select;
 }
 
 .search-fund {
-    @include ddFilter (31%, 0);
+    @include select(31%);
 }
 
 .bounds {
@@ -107,58 +107,3 @@
     text-align: center;
 }
 
-/* Articles sidebar */
-.article {
-    &-item {
-        width: 100%;
-        margin-bottom: $block-margin;
-        overflow: hidden;
-        &:nth-child(1) .article-img {
-            background: url('../img/box-cover-01.jpeg') no-repeat center;
-        }
-
-        &:nth-child(2) .article-img {
-            background: url('../img/box-cover-02.jpeg') no-repeat center;
-        }
-
-        &:nth-child(3) .article-img {
-            background: url('../img/box-cover-03.jpeg') no-repeat center;
-        }
-    }
-
-    &-link {
-        display: block;
-    }
-
-    &-figure {
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-    }
-
-    &-img {
-        display: block;
-        height: 160px;
-        background-size: cover;
-    }
-
-    &-caption {
-        height: 70px;
-        padding: 10px 20px 5px 10px;
-        background: white;
-        position: relative;
-        .more {
-            top: 13px;
-            left: 10px;
-        }
-    }
-
-    &-title {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-
-    &-subtitle {
-        font-size: 14px;
-    }
-}

@@ -1,4 +1,4 @@
-.report-btn {
+.report-form-item .report-btn {
   font-size: 14px;
   color: #fff;
   width: 100%;
@@ -7,20 +7,49 @@
   background-color: #062a4e;
   border-radius: 100px; }
 
-.report-input {
+.report-form-item .report-input {
+  font-size: 16px;
   width: 100%;
   height: 56px;
   line-height: 56px;
   padding-right: 20px;
   padding-left: 20px; }
-  .report-input::-webkit-input-placeholder {
+  .report-form-item .report-input::-webkit-input-placeholder {
     color: #455a64; }
-  .report-input::-moz-placeholder {
+  .report-form-item .report-input::-moz-placeholder {
     color: #455a64; }
-  .report-input:-ms-input-placeholder {
+  .report-form-item .report-input:-ms-input-placeholder {
     color: #455a64; }
-  .report-input::placeholder {
+  .report-form-item .report-input::placeholder {
     color: #455a64; }
+
+.article-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  overflow: hidden; }
+.article-link {
+  display: block; }
+.article-figure {
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+.article-img {
+  display: block;
+  height: 160px;
+  background-size: cover; }
+.article-caption {
+  height: 70px;
+  padding: 10px 20px 5px 10px;
+  background: white;
+  position: relative; }
+  .article-caption .more {
+    top: 13px;
+    left: 10px; }
+.article-title {
+  font-size: 18px; }
+.article-subtitle {
+  font-size: 14px; }
 
 /* Report */
 .report-section {
@@ -42,7 +71,12 @@
       font-size: 20px; } }
 
 .report-form {
-  margin-top: 30px;
+  margin-top: 30px; }
+  @media screen and (max-width: 414px) {
+    .report-form {
+      margin-top: 20px; } }
+
+.report-form-list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -62,9 +96,6 @@
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  @media screen and (max-width: 414px) {
-    .report-form {
-      margin-top: 20px; } }
 
 .report-form-item {
   width: 31%;
@@ -73,36 +104,53 @@
   @media screen and (max-width: 414px) {
     .report-form-item {
       width: 100%; } }
-
-.report-form-item-dd {
-  width: 31%;
-  height: 56px;
-  line-height: 56px;
-  margin-right: 0;
-  margin-bottom: 16px;
-  padding-right: 19px;
-  background-color: white;
-  position: relative; }
-  @media screen and (max-width: 414px) {
-    .report-form-item-dd {
-      width: 100%;
-      margin-right: 0; } }
-  .report-form-item-dd .ddl-arrow-container {
-    display: inline-block;
-    width: 56px;
+  .report-form-item .select-holder {
+    width: 31%;
     height: 56px;
     line-height: 56px;
-    position: absolute;
-    left: 0;
-    background-color: #eceff1; }
-  .report-form-item-dd .ddl-arrow-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: url("../img/ddl-arrow.png") no-repeat center;
-    background-size: cover;
-    position: absolute;
-    top: 16px;
-    left: 16px; }
+    margin-bottom: 0;
+    background-color: white;
+    position: relative; }
+    @media screen and (max-width: 414px) {
+      .report-form-item .select-holder {
+        width: 100%;
+        margin-right: 0; } }
+    .report-form-item .select-holder .select {
+      display: inline-block;
+      font-family: "Open Sans Hebrew", sans-serif;
+      font-size: 16px;
+      color: #062a4e;
+      width: 100%;
+      height: 100%;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      vertical-align: top;
+      position: relative;
+      z-index: 1; }
+    .report-form-item .select-holder .select::-ms-expand {
+      display: none; }
+    .report-form-item .select-holder .select:disabled {
+      pointer-events: none;
+      opacity: 0.5; }
+    .report-form-item .select-holder .select-arrow {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #eceff1;
+      background-image: url("../img/ddl-arrow.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 24px 24px; }
 
 /*# sourceMappingURL=section-report.css.map */

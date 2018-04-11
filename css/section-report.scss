@@ -27,13 +27,16 @@
 
 .report-form {
     margin-top: 30px;
+    @media screen and (max-width: $break-point-p) {
+        margin-top: 20px;
+    }
+}
+
+.report-form-list {
     @include flexbox;
     @include justify-content(space-evenly);
     @include align-items(center);
     @include flex-wrap;
-    @media screen and (max-width: $break-point-p) {
-        margin-top: 20px;
-    }
 }
 
 .report-form-item {
@@ -43,16 +46,17 @@
     @media screen and (max-width: $break-point-p) {
        width: 100%;
     }
+
+    .select-holder {
+        @include select(31%, 0);
+    }
+
+    .report-btn {
+        @extend %btn-primary;
+    }
+
+    .report-input {
+        @extend %input;
+    }
 }
 
-.report-form-item-dd {
-    @include ddFilter(31%, 0);
-}
-
-.report-btn {
-    @extend %btn-primary;
-}
-
-.report-input {
-    @extend %input;
-}

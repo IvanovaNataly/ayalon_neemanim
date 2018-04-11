@@ -4,9 +4,8 @@
 @import "compatibility.scss";
 @import "elements.scss";
 
-/* Reviews */
 .reviews-section {
-    margin-bottom: 50px;
+    margin-bottom: $section-margin;
     background: url('../img/bg-02.jpg') no-repeat center;
     background-size: cover;
     @include flexbox;
@@ -14,9 +13,10 @@
     @include justify-content(space-evenly);
 }
 
+/* Reviews */
 .reviews-wrapper {
     width: 64%;
-    padding-bottom: 50px;
+    padding-bottom: calc(#{$section-margin} - #{$block-margin});
     @include flexbox;
     @include flex-wrap;
     @include justify-content(space-evenly);
@@ -32,9 +32,13 @@
     }
 }
 
-.reviews-article {
-    @extend %article;
-    padding: 20px;
+.reviews-block {
+    width: 42%;
+    @media screen and (max-width: $break-point-p) {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 .reviews-header {
@@ -46,49 +50,36 @@
     margin-bottom: 30px;
 }
 
-    /* Survey */
-.survey-header {
-    margin-bottom: 8px;
-}
-
-.survey-title {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.survey-link {
-    font-weight: bold;
-    margin-top: 20px;
-    &:hover {
-        text-decoration: underline;
-    }
-}
+/* Survey */
+//.survey-header {
+//    margin-bottom: 8px;
+//}
+//
+//.survey-title {
+//    font-size: 18px;
+//    margin-bottom: 5px;
+//}
+//
+//.survey-link {
+//    font-weight: bold;
+//    margin-top: 20px;
+//    &:hover {
+//        text-decoration: underline;
+//    }
+//}
 
 /* Guides */
 .guides-subsection {
-    .article-item {
-        width: 340px;
-        @media screen and (max-width: $break-point-p) {
-            width: 280px;
-        }
-        &:nth-child(1) .article-img {
-            background: url('../img/box-cover-001.jpeg') no-repeat center;
-            background-size: cover;
-        }
-        &:nth-child(2) .article-img {
-            background: url('../img/box-cover-002.jpeg') no-repeat center;
-            background-size: cover;
-        }
-    }
+
 }
 
 
 /* Request */
 .request-subsection {
-    height: calc(100% - 20px - 20px);
+    height: calc(100% - 20px - #{$section-margin});
     text-align: center;
     padding: 30px 50px;
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 $section-margin 20px;
     background-color: rgba(255, 255, 255, 0.4);
     @media screen and (max-width: $break-point-p) {
         height: auto;
@@ -106,13 +97,8 @@
 }
 
 .request-input {
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-    padding-right: 20px;
-    padding-left: 20px;
+    @extend %input;
     margin-top: 20px;
-    @include placeholder($light-font-color);
 }
 
 .request-check-container {
