@@ -1,12 +1,20 @@
-table thead tr th,
-table tfoot tr th,
-table tbody tr td,
-table tr td,
-table tfoot tr td {
-  text-align: right; }
+table thead tr th {
+  text-align: right;
+  font-size: 16px;
+  color: #f7f7f7;
+  font-weight: normal;
+  line-height: 60px; }
+
+table tbody tr td {
+  text-align: right;
+  font-size: 16px;
+  line-height: 40px; }
 
 table td, table th {
-  text-align: right; }
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 @media only screen and (max-width: 767px) {
   div.table-wrapper div.scrollable {
@@ -14,6 +22,7 @@ table td, table th {
     margin-left: 0%; }
 
   .pinned {
-    right: 0; } }
+    right: 0;
+    background-color: initial; } }
 
 /*# sourceMappingURL=responsive-table-patches.css.map */
