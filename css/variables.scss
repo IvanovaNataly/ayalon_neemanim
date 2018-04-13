@@ -5,7 +5,27 @@ $table-max-width: 956px;
 
 $break-point-p: 414px;
 
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+    @media screen and (max-width: 414px) { @content; }
+    }
+    @else if $media == small-screens {
+        @media screen /*and (min-width: 321px) */and (max-width: 767px) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media screen and (min-width: 1025px) { @content; }
+    }
+    @else if $media == extra-wide-screens {
+        @media screen and (min-width: 1280px) { @content; }
+    }
+}
+
 $input-height: 56px;
 
 $section-margin: 50px;
 $block-margin: 16px;
+

@@ -77,7 +77,7 @@
     margin-bottom: $bottomMargin;
     background-color: white;
     position: relative;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         width: $width-p;
         margin-right: 0;
     }

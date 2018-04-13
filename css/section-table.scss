@@ -9,7 +9,7 @@
     padding: 40px 70px;
     background: url('../img/bg-01.jpg') no-repeat center;
     background-size: cover;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         padding: 20px;
     }
 }
@@ -19,7 +19,7 @@
     font-weight: bold;
     width: 100%;
     margin-bottom: 20px;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         font-size: 18px;
     }
 }
@@ -28,7 +28,7 @@
     @include flexbox;
     @include justify-content(center);
     margin-bottom: $block-margin;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         @include flex-wrap(wrap);
     }
 }
@@ -36,7 +36,7 @@
 .table-container {
     flex-grow: 1;
     max-width: $table-max-width;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
        width: 100%;
     }
 }
@@ -44,7 +44,7 @@
 .table-sidebar {
     width: 300px;
     margin-right: 20px;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         margin-right: 0;
     }
 }

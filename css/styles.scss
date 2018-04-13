@@ -44,14 +44,12 @@ body {
     background-color: $white;
 }
 
-
-
 /* Main content */
 .main-content {
     width: 90%;
     max-width: $max-width;
     margin: 0 auto;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         width: 100%;
     }
 }
@@ -72,7 +70,7 @@ body {
     line-height: 165px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), linear-gradient($main-color, $main-color);
     opacity: 0.4;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         width: 100%;
         margin-bottom: $section-margin;
     }
@@ -82,7 +80,7 @@ body {
     width: 33.3%;
     padding: 30px 50px;
     background-color: $main-color;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         width: 100%;
         padding-right: 10px;
         padding-left: 10px;
@@ -110,7 +108,7 @@ body {
     height: 150px;
     line-height: 150px;
     background-color: $footer-bg;
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         height: auto;
         line-height: 50px;
         padding-top: 50px;
@@ -130,7 +128,7 @@ body {
         padding-right: 2vw;
         padding-left: 2vw;
     }
-    @media screen and (max-width: $break-point-p) {
+    @include respond-to(handhelds) {
         &:first-child:after {
             display: none;
         }
