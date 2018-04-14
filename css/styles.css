@@ -156,11 +156,16 @@ body {
   width: 33.3%;
   padding: 30px 50px;
   background-color: #062a4e; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 414px) {
     .subscribe-invitation {
       width: 100%;
       padding-right: 10px;
       padding-left: 10px; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .subscribe-invitation {
+      width: 100%;
+      padding-right: 50px;
+      padding-left: 50px; } }
 
 .subscribe-title {
   font-size: 16px;

@@ -189,7 +189,8 @@ button {
       padding: 30px 20px; } }
   @media screen and (max-width: 768px) {
     .request-subsection {
-      margin-right: 20px; } }
+      margin-right: 50px;
+      margin-left: 50px; } }
 
 .request-header {
   font-size: 22px;

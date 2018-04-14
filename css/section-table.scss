@@ -31,6 +31,9 @@
     @include respond-to(small-screens) {
         @include flex-wrap(wrap);
     }
+    @include respond-to(small-screens-strict) {
+        width: 100%;
+    }
 }
 
 .table-container {
@@ -38,6 +41,10 @@
     max-width: $table-max-width;
     @include respond-to(handhelds) {
        width: 100%;
+    }
+    @include respond-to(small-screens-strict) {
+        width: 100%;
+        flex-grow: 0;
     }
 }
 
@@ -50,7 +57,6 @@
     @include respond-to(small-screens-strict) {
         width: 100%;
         margin-top: $section-margin;
-
     }
 
     .article-list {
@@ -69,23 +75,28 @@
     @include flexbox;
     @include flex-wrap;
     @include justify-content;
-}
+    .select-holder {
+        @include select;
+        @include respond-to(small-screens-strict) {
+            width: 48%;
+        }
+    }
+    .search-fund {
+        @include select(31%);
+        @include respond-to(small-screens-strict) {
+            width: 48%;
+        }
+    }
 
-.select-holder {
-    @include select;
-}
-
-.search-fund {
-    @include select(31%);
-}
-
-.search {
-    flex-basis: 100%;
-    margin-bottom: $block-margin;
-    .search-input {
-        @extend %input;
+    .search {
+        flex-basis: 100%;
+        margin-bottom: $block-margin;
+        .search-input {
+            @extend %input;
+        }
     }
 }
+
 
 //Table
 .responsive-table-wrapper {

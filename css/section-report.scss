@@ -54,8 +54,8 @@
        width: 100%;
     }
 
-    .select-holder {
-        @include select(31%, 0);
+    &.select-holder {
+        @include select(31%);
     }
 
     .report-btn {

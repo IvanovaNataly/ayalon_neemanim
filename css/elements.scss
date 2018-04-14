@@ -70,7 +70,7 @@
 }
 
 //Custom select
-@mixin select($width: 22%, $bottomMargin: 16px, $width-p: 100%) {
+@mixin select($width: 22%, $bottomMargin: 16px, $width-handhelds: 100%) {
     width: $width;
     height: $input-height;
     line-height: $input-height;
@@ -78,7 +78,7 @@
     background-color: white;
     position: relative;
     @include respond-to(handhelds) {
-        width: $width-p;
+        width: $width-handhelds;
         margin-right: 0;
     }
 

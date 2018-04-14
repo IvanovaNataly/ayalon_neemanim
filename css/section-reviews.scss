@@ -88,6 +88,7 @@
     }
     @include respond-to(small-screens) {
         margin-right: $small-screen-horz-margin;
+        margin-left: $small-screen-horz-margin;
     }
 }
 

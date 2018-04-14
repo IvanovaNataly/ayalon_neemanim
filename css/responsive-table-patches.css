@@ -19,7 +19,7 @@ table td, table th {
 table th {
   font-weight: 400; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   div.table-wrapper div.scrollable {
     margin-right: 35%;
     margin-left: 0%; }

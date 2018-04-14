@@ -63,8 +63,8 @@
       padding: 20px 10px; } }
   @media screen and (min-width: 415px) and (max-width: 768px) {
     .report-section {
-      padding-right: 20px;
-      padding-left: 20px; } }
+      padding-right: 50px;
+      padding-left: 50px; } }
 
 .report-title {
   text-align: center;
@@ -115,18 +115,18 @@
   @media screen and (max-width: 414px) {
     .report-form-item {
       width: 100%; } }
-  .report-form-item .select-holder {
+  .report-form-item.select-holder {
     width: 31%;
     height: 56px;
     line-height: 56px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     background-color: white;
     position: relative; }
     @media screen and (max-width: 414px) {
-      .report-form-item .select-holder {
+      .report-form-item.select-holder {
         width: 100%;
         margin-right: 0; } }
-    .report-form-item .select-holder .select {
+    .report-form-item.select-holder .select {
       display: inline-block;
       font-family: "Open Sans Hebrew", sans-serif;
       font-size: 16px;
@@ -145,12 +145,12 @@
       vertical-align: top;
       position: relative;
       z-index: 1; }
-    .report-form-item .select-holder .select::-ms-expand {
+    .report-form-item.select-holder .select::-ms-expand {
       display: none; }
-    .report-form-item .select-holder .select:disabled {
+    .report-form-item.select-holder .select:disabled {
       pointer-events: none;
       opacity: 0.5; }
-    .report-form-item .select-holder .select-arrow {
+    .report-form-item.select-holder .select-arrow {
       display: inline-block;
       width: 56px;
       height: 56px;

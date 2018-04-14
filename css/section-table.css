@@ -1,17 +1,17 @@
-.search .search-input {
+.table-filters .search .search-input {
   font-size: 16px;
   width: 100%;
   height: 56px;
   line-height: 56px;
   padding-right: 20px;
   padding-left: 20px; }
-  .search .search-input::-webkit-input-placeholder {
+  .table-filters .search .search-input::-webkit-input-placeholder {
     color: #455a64; }
-  .search .search-input::-moz-placeholder {
+  .table-filters .search .search-input::-moz-placeholder {
     color: #455a64; }
-  .search .search-input:-ms-input-placeholder {
+  .table-filters .search .search-input:-ms-input-placeholder {
     color: #455a64; }
-  .search .search-input::placeholder {
+  .table-filters .search .search-input::placeholder {
     color: #455a64; }
 
 .article-item {
@@ -49,7 +49,7 @@
   background-size: cover; }
   @media screen and (max-width: 768px) {
     .table-section {
-      padding: 20px; } }
+      padding: 50px; } }
 
 .table-section-title {
   font-size: 24px;
@@ -78,6 +78,9 @@
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .table-wrapper {
+      width: 100%; } }
 
 .table-container {
   flex-grow: 1;
@@ -85,6 +88,10 @@
   @media screen and (max-width: 414px) {
     .table-container {
       width: 100%; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .table-container {
+      width: 100%;
+      flex-grow: 0; } }
 
 .table-sidebar {
   width: 300px;
@@ -126,108 +133,111 @@
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   justify-content: space-between; }
-
-.select-holder {
-  width: 22%;
-  height: 56px;
-  line-height: 56px;
-  margin-bottom: 16px;
-  background-color: white;
-  position: relative; }
-  @media screen and (max-width: 414px) {
-    .select-holder {
-      width: 100%;
-      margin-right: 0; } }
-  .select-holder .select {
-    display: inline-block;
-    font-family: "Open Sans Hebrew", sans-serif;
-    font-size: 16px;
-    color: #062a4e;
-    width: 100%;
-    height: 100%;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    outline: 0;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    vertical-align: top;
-    position: relative;
-    z-index: 1; }
-  .select-holder .select::-ms-expand {
-    display: none; }
-  .select-holder .select:disabled {
-    pointer-events: none;
-    opacity: 0.5; }
-  .select-holder .select-arrow {
-    display: inline-block;
-    width: 56px;
+  .table-filters .select-holder {
+    width: 22%;
     height: 56px;
     line-height: 56px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #eceff1;
-    background-image: url("../img/ddl-arrow.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 24px 24px; }
-
-.search-fund {
-  width: 31%;
-  height: 56px;
-  line-height: 56px;
-  margin-bottom: 16px;
-  background-color: white;
-  position: relative; }
-  @media screen and (max-width: 414px) {
-    .search-fund {
+    margin-bottom: 16px;
+    background-color: white;
+    position: relative; }
+    @media screen and (max-width: 414px) {
+      .table-filters .select-holder {
+        width: 100%;
+        margin-right: 0; } }
+    .table-filters .select-holder .select {
+      display: inline-block;
+      font-family: "Open Sans Hebrew", sans-serif;
+      font-size: 16px;
+      color: #062a4e;
       width: 100%;
-      margin-right: 0; } }
-  .search-fund .select {
-    display: inline-block;
-    font-family: "Open Sans Hebrew", sans-serif;
-    font-size: 16px;
-    color: #062a4e;
-    width: 100%;
-    height: 100%;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    outline: 0;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    vertical-align: top;
-    position: relative;
-    z-index: 1; }
-  .search-fund .select::-ms-expand {
-    display: none; }
-  .search-fund .select:disabled {
-    pointer-events: none;
-    opacity: 0.5; }
-  .search-fund .select-arrow {
-    display: inline-block;
-    width: 56px;
+      height: 100%;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      vertical-align: top;
+      position: relative;
+      z-index: 1; }
+    .table-filters .select-holder .select::-ms-expand {
+      display: none; }
+    .table-filters .select-holder .select:disabled {
+      pointer-events: none;
+      opacity: 0.5; }
+    .table-filters .select-holder .select-arrow {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #eceff1;
+      background-image: url("../img/ddl-arrow.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 24px 24px; }
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+      .table-filters .select-holder {
+        width: 48%; } }
+  .table-filters .search-fund {
+    width: 31%;
     height: 56px;
     line-height: 56px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #eceff1;
-    background-image: url("../img/ddl-arrow.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 24px 24px; }
-
-.search {
-  flex-basis: 100%;
-  margin-bottom: 16px; }
+    margin-bottom: 16px;
+    background-color: white;
+    position: relative; }
+    @media screen and (max-width: 414px) {
+      .table-filters .search-fund {
+        width: 100%;
+        margin-right: 0; } }
+    .table-filters .search-fund .select {
+      display: inline-block;
+      font-family: "Open Sans Hebrew", sans-serif;
+      font-size: 16px;
+      color: #062a4e;
+      width: 100%;
+      height: 100%;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+      outline: 0;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      vertical-align: top;
+      position: relative;
+      z-index: 1; }
+    .table-filters .search-fund .select::-ms-expand {
+      display: none; }
+    .table-filters .search-fund .select:disabled {
+      pointer-events: none;
+      opacity: 0.5; }
+    .table-filters .search-fund .select-arrow {
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      line-height: 56px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #eceff1;
+      background-image: url("../img/ddl-arrow.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 24px 24px; }
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+      .table-filters .search-fund {
+        width: 48%; } }
+  .table-filters .search {
+    flex-basis: 100%;
+    margin-bottom: 16px; }
 
 .responsive-table-wrapper {
   width: 100%; }
