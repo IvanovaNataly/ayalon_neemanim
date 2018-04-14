@@ -47,9 +47,12 @@
   padding: 40px 70px;
   background: url("../img/bg-01.jpg") no-repeat center;
   background-size: cover; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .table-section {
       padding: 50px; } }
+  @media screen and (max-width: 1024px) {
+    .table-section {
+      padding: 20px; } }
 
 .table-section-title {
   font-size: 24px;
@@ -72,15 +75,15 @@
   -moz-justify-content: center;
   justify-content: center;
   margin-bottom: 16px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .table-wrapper {
+      width: 100%; } }
+  @media screen and (max-width: 1024px) {
     .table-wrapper {
       -webkit-flex-wrap: wrap;
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
-  @media screen and (min-width: 415px) and (max-width: 768px) {
-    .table-wrapper {
-      width: 100%; } }
 
 .table-container {
   flex-grow: 1;
@@ -103,7 +106,25 @@
     .table-sidebar {
       width: 100%;
       margin-top: 50px; } }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .table-sidebar {
+      width: 100%;
+      margin-top: 50px; } }
   @media screen and (min-width: 415px) and (max-width: 768px) {
+    .table-sidebar .article-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      -webkit-justify-content: space-evenly;
+      -moz-justify-content: space-evenly;
+      justify-content: space-evenly; }
+      .table-sidebar .article-list .article-item:not(:first-child) {
+        margin-right: 10px; } }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
     .table-sidebar .article-list {
       display: -webkit-box;
       display: -webkit-flex;

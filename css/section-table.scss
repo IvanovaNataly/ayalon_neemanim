@@ -9,8 +9,11 @@
     padding: 40px 70px;
     background: url('../img/bg-01.jpg') no-repeat center;
     background-size: cover;
-    @include respond-to(small-screens) {
+    @include respond-to(medium-screens) {
         padding: $small-screen-horz-margin;
+    }
+    @include respond-to(medium-screens) {
+        padding: $handhelds-screen-horz-margin;
     }
 }
 
@@ -28,11 +31,11 @@
     @include flexbox;
     @include justify-content(center);
     margin-bottom: $block-margin;
-    @include respond-to(small-screens) {
-        @include flex-wrap(wrap);
-    }
     @include respond-to(small-screens-strict) {
         width: 100%;
+    }
+    @include respond-to(medium-screens) {
+        @include flex-wrap(wrap);
     }
 }
 
@@ -58,9 +61,20 @@
         width: 100%;
         margin-top: $section-margin;
     }
+    @include respond-to(medium-screens-strict) {
+        width: 100%;
+        margin-top: $section-margin;
+    }
 
     .article-list {
         @include respond-to(small-screens-strict) {
+            @include flexbox;
+            @include justify-content(space-evenly);
+            .article-item:not(:first-child) {
+                margin-right: 10px;
+            }
+        }
+        @include respond-to(medium-screens-strict) {
             @include flexbox;
             @include justify-content(space-evenly);
             .article-item:not(:first-child) {

@@ -117,16 +117,14 @@ body {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto; }
-  @media screen and (max-width: 414px) {
-    .main-content {
-      width: 100%; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .main-content {
       width: 100%; } }
 
 /* Subscribe */
 .subscribe-section {
   text-align: center;
+  height: fit-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -143,7 +141,7 @@ body {
   text-align: center;
   color: #fff;
   width: 66.6%;
-  height: 165px;
+  min-height: 165px;
   line-height: 165px;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)), linear-gradient(#062a4e, #062a4e);
   opacity: 0.4; }
@@ -154,6 +152,7 @@ body {
 
 .subscribe-invitation {
   width: 33.3%;
+  min-height: 165px;
   padding: 30px 50px;
   background-color: #062a4e; }
   @media screen and (max-width: 414px) {

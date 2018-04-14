@@ -86,7 +86,7 @@
         margin: 0;
         padding: 30px 20px;
     }
-    @include respond-to(small-screens) {
+    @include respond-to(small-screens-strict) {
         margin-right: $small-screen-horz-margin;
         margin-left: $small-screen-horz-margin;
     }

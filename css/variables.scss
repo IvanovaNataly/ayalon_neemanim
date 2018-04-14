@@ -8,7 +8,7 @@ $break-point-p: 414px;
 $section-margin: 50px;
 $block-margin: 16px;
 $small-screen-horz-margin: 50px;
-
+$handhelds-screen-horz-margin: 20px;
 
 @mixin respond-to($media) {
     @if $media == handhelds {
@@ -21,6 +21,9 @@ $small-screen-horz-margin: 50px;
         @media screen and (min-width: 415px) and (max-width: 768px) { @content; }
     }
     @else if $media == medium-screens {
+        @media screen and (max-width: 1024px) { @content; }
+    }
+    @else if $media == medium-screens-strict {
         @media screen and (min-width: 769px) and (max-width: 1024px) { @content; }
     }
     @else if $media == wide-screens {
