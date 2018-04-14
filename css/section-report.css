@@ -61,6 +61,10 @@
   @media screen and (max-width: 414px) {
     .report-section {
       padding: 20px 10px; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .report-section {
+      padding-right: 20px;
+      padding-left: 20px; } }
 
 .report-title {
   text-align: center;
@@ -96,6 +100,13 @@
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .report-form-list {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between; } }
 
 .report-form-item {
   width: 31%;

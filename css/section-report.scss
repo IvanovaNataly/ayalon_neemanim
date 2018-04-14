@@ -14,6 +14,10 @@
     @include respond-to(handhelds) {
         padding: 20px 10px;
     }
+    @include respond-to(small-screens-strict) {
+        padding-right: $small-screen-horz-margin;
+        padding-left: $small-screen-horz-margin;
+    }
 }
 
 .report-title {
@@ -37,6 +41,9 @@
     @include justify-content(space-evenly);
     @include align-items(center);
     @include flex-wrap;
+    @include respond-to(small-screens-strict) {
+        @include justify-content(space-between);
+    }
 }
 
 .report-form-item {

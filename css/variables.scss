@@ -5,27 +5,32 @@ $table-max-width: 956px;
 
 $break-point-p: 414px;
 
+$section-margin: 50px;
+$block-margin: 16px;
+$small-screen-horz-margin: 20px;
+
 
 @mixin respond-to($media) {
     @if $media == handhelds {
-    @media screen and (max-width: 414px) { @content; }
+    @media screen and (max-width: 414px) { @content; } // tested on 320px
     }
     @else if $media == small-screens {
-        @media screen /*and (min-width: 321px) */and (max-width: 767px) { @content; }
+        @media screen and (max-width: 768px) { @content; }
+    }
+    @else if $media == small-screens-strict {
+        @media screen and (min-width: 415px) and (max-width: 768px) { @content; }
     }
     @else if $media == medium-screens {
-        @media screen and (min-width: 768px) and (max-width: 1024px) { @content; }
+        @media screen and (min-width: 769px) and (max-width: 1024px) { @content; }
     }
     @else if $media == wide-screens {
-        @media screen and (min-width: 1025px) { @content; }
+        @media screen and (min-width: 1025px) and (max-width: 1280px) { @content; }
     }
     @else if $media == extra-wide-screens {
-        @media screen and (min-width: 1280px) { @content; }
+        @media screen and (min-width: 1281px) { @content; }
     }
 }
 
 $input-height: 56px;
 
-$section-margin: 50px;
-$block-margin: 16px;
 

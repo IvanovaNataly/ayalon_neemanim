@@ -9,8 +9,8 @@
     padding: 40px 70px;
     background: url('../img/bg-01.jpg') no-repeat center;
     background-size: cover;
-    @include respond-to(handhelds) {
-        padding: 20px;
+    @include respond-to(small-screens) {
+        padding: $small-screen-horz-margin;
     }
 }
 
@@ -28,7 +28,7 @@
     @include flexbox;
     @include justify-content(center);
     margin-bottom: $block-margin;
-    @include respond-to(handhelds) {
+    @include respond-to(small-screens) {
         @include flex-wrap(wrap);
     }
 }
@@ -44,8 +44,23 @@
 .table-sidebar {
     width: 300px;
     margin-right: 20px;
-    @include respond-to(handhelds) {
+    @include respond-to(small-screens) {
         margin-right: 0;
+    }
+    @include respond-to(small-screens-strict) {
+        width: 100%;
+        margin-top: $section-margin;
+
+    }
+
+    .article-list {
+        @include respond-to(small-screens-strict) {
+            @include flexbox;
+            @include justify-content(space-evenly);
+            .article-item:not(:first-child) {
+                margin-right: 10px;
+            }
+        }
     }
 }
 

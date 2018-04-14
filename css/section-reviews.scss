@@ -20,14 +20,14 @@
     @include flexbox;
     @include flex-wrap;
     @include justify-content(space-evenly);
-    @include respond-to(handhelds) {
+    @include respond-to(small-screens) {
         width: 100%;
     }
 }
 
 .request-wrapper {
     width: 36%;
-    @include respond-to(handhelds) {
+    @include respond-to(small-screens) {
         width: 100%;
     }
 }
@@ -85,6 +85,9 @@
         height: auto;
         margin: 0;
         padding: 30px 20px;
+    }
+    @include respond-to(small-screens) {
+        margin-right: $small-screen-horz-margin;
     }
 }
 
