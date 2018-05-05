@@ -49,6 +49,8 @@ body {
     width: 90%;
     max-width: $max-width;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     @include respond-to(medium-screens) { width: 100%; }
 }
 
@@ -56,6 +58,7 @@ body {
 .subscribe-section {
     text-align: center;
     height: fit-content;
+    order: 4;
     @include flexbox;
     @include flex-wrap;
     margin-bottom: $section-margin;

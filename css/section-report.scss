@@ -11,6 +11,7 @@
     padding-bottom: 50px - $block-margin;
     padding-left: 50px;
     background-color: $contrast-color-bg;
+    order: 3;
     @include respond-to(handhelds) {
         padding: 20px 10px;
     }

@@ -8,6 +8,7 @@
     margin-bottom: $section-margin;
     background: url('../img/bg-02.jpg') no-repeat center;
     background-size: cover;
+    order: 2;
     @include flexbox;
     @include flex-wrap;
     @include justify-content(space-evenly);

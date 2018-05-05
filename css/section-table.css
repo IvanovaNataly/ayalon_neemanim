@@ -46,7 +46,8 @@
 .table-section {
   padding: 40px 70px;
   background: url("../img/bg-01.jpg") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  order: 1; }
   @media screen and (max-width: 1024px) {
     .table-section {
       padding: 50px; } }
@@ -87,7 +88,8 @@
 
 .table-container {
   flex-grow: 1;
-  max-width: 956px; }
+  max-width: 956px;
+  order: 2; }
   @media screen and (max-width: 414px) {
     .table-container {
       width: 100%; } }
@@ -98,7 +100,8 @@
 
 .table-sidebar {
   width: 300px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  order: 1; }
   @media screen and (max-width: 768px) {
     .table-sidebar {
       margin-right: 0; } }

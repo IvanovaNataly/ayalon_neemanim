@@ -57,7 +57,8 @@
   padding-right: 50px;
   padding-bottom: 34px;
   padding-left: 50px;
-  background-color: rgba(254, 208, 20, 0.7); }
+  background-color: rgba(254, 208, 20, 0.7);
+  order: 3; }
   @media screen and (max-width: 414px) {
     .report-section {
       padding: 20px 10px; } }
