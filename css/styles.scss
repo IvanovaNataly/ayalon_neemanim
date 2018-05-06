@@ -58,11 +58,13 @@ body {
 .subscribe-section {
     text-align: center;
     height: fit-content;
-    order: 4;
     @include flexbox;
     @include flex-wrap;
     margin-bottom: $section-margin;
     position: relative;
+    @include respond-to(handhelds) {
+        order: 4;
+    }
 }
 
 .subscribe-banner {

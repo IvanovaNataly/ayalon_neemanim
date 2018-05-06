@@ -114,7 +114,6 @@ button {
   margin-bottom: 50px;
   background: url("../img/bg-02.jpg") no-repeat center;
   background-size: cover;
-  order: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -129,6 +128,9 @@ button {
   -webkit-justify-content: space-evenly;
   -moz-justify-content: space-evenly;
   justify-content: space-evenly; }
+  @media screen and (max-width: 414px) {
+    .reviews-section {
+      order: 2; } }
 
 /* Reviews */
 .reviews-wrapper {

@@ -127,7 +127,6 @@ body {
 .subscribe-section {
   text-align: center;
   height: fit-content;
-  order: 4;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -139,6 +138,9 @@ body {
   flex-wrap: wrap;
   margin-bottom: 50px;
   position: relative; }
+  @media screen and (max-width: 414px) {
+    .subscribe-section {
+      order: 4; } }
 
 .subscribe-banner {
   text-align: center;

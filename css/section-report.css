@@ -57,11 +57,11 @@
   padding-right: 50px;
   padding-bottom: 34px;
   padding-left: 50px;
-  background-color: rgba(254, 208, 20, 0.7);
-  order: 3; }
+  background-color: rgba(254, 208, 20, 0.7); }
   @media screen and (max-width: 414px) {
     .report-section {
-      padding: 20px 10px; } }
+      padding: 20px 10px;
+      order: 3; } }
   @media screen and (min-width: 415px) and (max-width: 768px) {
     .report-section {
       padding-right: 50px;
