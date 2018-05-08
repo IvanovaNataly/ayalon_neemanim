@@ -47,7 +47,7 @@
     max-width: $table-max-width;
     @include respond-to(handhelds) {
         width: 100%;
-        order: 2;
+        order: 1;
     }
     @include respond-to(small-screens-strict) {
         width: 100%;
@@ -59,7 +59,7 @@
     width: 300px;
     margin-right: 20px;
     @include respond-to(handhelds) {
-        order: 1;
+        order: 2;
     }
     @include respond-to(small-screens) {
         margin-right: 0;
