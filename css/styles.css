@@ -55,8 +55,11 @@ a {
   text-decoration: none; }
 
 button {
+  font-family: Open Sans Hebrew, sans-serif;
+  font-size: 14px;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
 
 .article-item {
   width: 100%;
@@ -89,14 +92,28 @@ button {
 .sr-only {
   display: none; }
 
+.hidden {
+  display: none; }
+
 .more {
   width: 45px;
   height: 45px;
   background: url("../img/more.svg") no-repeat center;
   position: absolute; }
 
+.validation-message {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+  color: #B73342;
+  min-height: 29px;
+  line-height: normal;
+  padding: 5px 2px; }
+
 * {
   box-sizing: border-box; }
+  *:focus {
+    outline: 1px solid #006380 !important; }
 
 /* Common */
 html {
@@ -117,7 +134,16 @@ body {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column; }
   @media screen and (max-width: 1024px) {
     .main-content {
@@ -173,7 +199,6 @@ body {
 
 .subscribe-title {
   font-size: 16px;
-  font-weight: 600;
   color: #fff; }
 
 .subscribe-link {

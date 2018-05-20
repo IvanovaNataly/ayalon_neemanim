@@ -12,8 +12,11 @@
 @import "compatibility.scss";
 @import "elements.scss";
 
-
 .sr-only {
+    display: none;
+}
+
+.hidden {
     display: none;
 }
 
@@ -24,8 +27,21 @@
     position: absolute;
 }
 
+.validation-message {
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: $alert-color;
+    min-height: $invalid-message-height;
+    line-height: normal;
+    padding: 5px 2px;
+}
+
 * {
     box-sizing: border-box;
+    &:focus {
+        outline: 1px solid $focus !important;
+    }
 }
 
 /* Common */
@@ -49,8 +65,8 @@ body {
     width: 90%;
     max-width: $max-width;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    @include flexbox;
+    @include flex-direction(column);
     @include respond-to(medium-screens) { width: 100%; }
 }
 
@@ -100,7 +116,7 @@ body {
 
 .subscribe-title {
     font-size: 16px;
-    font-weight: 600;
+    //font-weight: 600;
     color: $white;
 }
 

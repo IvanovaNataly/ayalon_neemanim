@@ -8,7 +8,7 @@ table thead tr th {
 table tbody tr td {
   text-align: right;
   font-size: 16px;
-  line-height: unset; }
+  line-height: normal; }
 
 table td, table th {
   text-align: right;
@@ -19,7 +19,7 @@ table td, table th {
 table th {
   font-weight: 400; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   div.table-wrapper div.scrollable {
     margin-right: 35%;
     margin-left: 0%; }
