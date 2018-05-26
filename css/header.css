@@ -85,7 +85,6 @@
         .nav-list-item-last {
           text-align: right; } }
   .nav-list-link {
-    display: inline;
     width: 100%;
     font-size: 18px;
     font-weight: 600;

@@ -54,8 +54,11 @@ a {
   text-decoration: none; }
 
 button {
+  font-family: Open Sans Hebrew, sans-serif;
+  font-size: 14px;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
 
 .request-btn {
   font-size: 14px;
