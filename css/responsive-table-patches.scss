@@ -27,12 +27,23 @@ table th {
     div.table-wrapper div.scrollable {
         margin-right: 35%;
         margin-left: 0%;
+        overflow: scroll;
+        height: 300px;
     }
     .pinned {
         right: 0;
         background-color: initial;
+        overflow: scroll;
+        height: 300px + 68px;
         table tr {
             height: auto !important;
+        }
+    }
+    .mobile-header {
+        position: absolute;
+        right: 0%;
+        th:first-child {
+            width: 35%;
         }
     }
 }

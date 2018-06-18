@@ -22,12 +22,22 @@ table th {
 @media only screen and (max-width: 767px) {
   div.table-wrapper div.scrollable {
     margin-right: 35%;
-    margin-left: 0%; }
+    margin-left: 0%;
+    overflow: scroll;
+    height: 300px; }
 
   .pinned {
     right: 0;
-    background-color: initial; }
+    background-color: initial;
+    overflow: scroll;
+    height: 368px; }
     .pinned table tr {
-      height: auto !important; } }
+      height: auto !important; }
+
+  .mobile-header {
+    position: absolute;
+    right: 0%; }
+    .mobile-header th:first-child {
+      width: 35%; } }
 
 /*# sourceMappingURL=responsive-table-patches.css.map */
