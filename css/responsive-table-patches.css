@@ -1,3 +1,4 @@
+@charset "UTF-8";
 table thead tr th {
   text-align: right;
   font-size: 16px;
@@ -20,14 +21,30 @@ table th {
   font-weight: 400; }
 
 @media only screen and (max-width: 767px) {
+  .responsive-table-wrapper {
+    position: relative; }
+    .responsive-table-wrapper:before {
+      content: "שם הקופה";
+      width: 100%;
+      height: 68px;
+      line-height: 68px;
+      color: #fff;
+      padding-right: 10px;
+      background-color: #062a4e;
+      position: absolute;
+      top: 0;
+      right: 0; }
+
   div.table-wrapper div.scrollable {
     margin-right: 35%;
     margin-left: 0%;
     overflow: scroll;
-    height: 300px; }
+    height: 300px;
+    margin-top: 68px; }
 
   .pinned {
     right: 0;
+    top: 68px;
     background-color: initial;
     overflow: scroll;
     height: 368px; }
@@ -36,8 +53,6 @@ table th {
 
   .mobile-header {
     position: absolute;
-    right: 0%; }
-    .mobile-header th:first-child {
-      width: 35%; } }
+    right: 35%; } }
 
 /*# sourceMappingURL=responsive-table-patches.css.map */

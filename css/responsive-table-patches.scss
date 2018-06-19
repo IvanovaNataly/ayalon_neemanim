@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 table thead tr th {
     text-align: right;
     font-size: 16px;
@@ -24,14 +26,32 @@ table th {
 }
 
 @media only screen and (max-width: 767px) {
+    .responsive-table-wrapper{
+
+        position: relative;
+        &:before {
+            content: "שם הקופה";
+            width: 100%;
+            height: 68px;
+            line-height: 68px;
+            color: $white;
+            padding-right: 10px;
+            background-color: $main-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
     div.table-wrapper div.scrollable {
         margin-right: 35%;
         margin-left: 0%;
         overflow: scroll;
         height: 300px;
+        margin-top: 68px;
     }
     .pinned {
         right: 0;
+        top: 68px;
         background-color: initial;
         overflow: scroll;
         height: 300px + 68px;
@@ -41,9 +61,6 @@ table th {
     }
     .mobile-header {
         position: absolute;
-        right: 0%;
-        th:first-child {
-            width: 35%;
-        }
+        right: 35%;
     }
 }
