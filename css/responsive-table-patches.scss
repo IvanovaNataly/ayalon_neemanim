@@ -1,5 +1,56 @@
 @import "colors.scss";
 
+
+.responsive-table-wrapper {
+    width: 100%;
+}
+
+.main-table {
+    width: 100%;
+    height: 300px; // visible area of the table, not including header
+    overflow: auto;
+}
+
+.responsive-table {
+    width: 100%;
+}
+
+.table-row {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(236, 239, 241, 0.7);
+    cursor: pointer;
+}
+
+.table-row:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.table-row:hover {
+    background-color: rgba(254, 208, 19, 0.7);
+}
+
+.table-row.table-header {
+    height: 50px;
+    line-height: 50px;
+    background-color: $main-color;
+    color: $white-font-color;
+}
+
+.table-header-hidden .table-row.table-header {
+    height: 0;
+    line-height: 0;
+    th {
+        font-size: 0;
+        height: 0;
+        padding: 0;
+    }
+}
+
+.pinned-header-table {
+    width: 100%;
+}
+
 table thead tr th {
     text-align: right;
     font-size: 16px;
@@ -25,15 +76,6 @@ table th {
     font-weight: 400;
 }
 
-.table-header-hidden .table-row.table-header {
-    height: 0;
-    line-height: 0;
-    th {
-        font-size: 0;
-        height: 0;
-        padding: 0;
-    }
-}
 
 @media only screen and (max-width: 767px) {
     .responsive-table-wrapper{

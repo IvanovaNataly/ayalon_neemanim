@@ -118,40 +118,4 @@
     }
 }
 
-
-//Table
-.responsive-table-wrapper {
-    width: 100%;
-}
-
-.responsive-table {
-    width: 100%;
-    height: 300px; // visible area of the table, not including header
-    overflow: auto;
-}
-
-.responsive {
-    width: 100%;
-}
-
-.table-row {
-    height: 40px;
-    line-height: 40px;
-    background-color: rgba(236, 239, 241, 0.7);
-    cursor: pointer;
-}
-
-.table-row:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.table-row:hover {
-    background-color: rgba(254, 208, 19, 0.7);
-}
-
-.table-row.table-header {
-    height: 50px;
-    line-height: 50px;
-    background-color: $main-color;
-    color: $white-font-color;
-}
+//Table in in file responsive-table-patches.scss
