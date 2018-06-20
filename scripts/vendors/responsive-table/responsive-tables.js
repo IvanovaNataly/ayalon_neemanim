@@ -19,14 +19,12 @@ $(document).ready(function() {
   $(window).load(updateTables);
   $(window).on("redraw",function(){switched=false;updateTables();}); // An event to listen for
   $(window).on("resize", updateTables);
-   
-	
-	function splitTable(original)
-	{
+
+  function splitTable(original) {
 		original.wrap("<div class='table-wrapper' />");
 		
 		var copy = original.clone();
-		copy.find("td:not(:first-child), th:not(:first-child), th:first-child").css("display", "none");
+		copy.find("td, th:not(.table-first-column), .table-first-column-header").css("display", "none");
 		copy.removeClass("responsive");
 
 		original.closest(".table-wrapper").append(copy);
@@ -34,23 +32,23 @@ $(document).ready(function() {
 
 
 		var header = original.clone();
-		header.find("tr:not(.table-header), th:first-child").css("display", "none");
-		original.find("tr.table-header").css("display", "none");
+		header.find("tbody").css("display", "none");
+		original.find("thead").css("display", "none");
 		header.removeClass("responsive");
 
 		original.closest(".table-wrapper").prepend(header);
-		header.wrap("<div class='mobile-header' />");
+		header.wrap("<div class='pinned-header' />");
 
 		original.wrap("<div class='scrollable' />");
 
-    setCellHeights(original, copy);
-	}
-	
-	function unsplitTable(original) {
+    	setCellHeights(original, copy);
+  }
+
+  function unsplitTable(original) {
     original.closest(".table-wrapper").find(".pinned").remove();
     original.unwrap();
     original.unwrap();
-	}
+  }
 
   function setCellHeights(original, copy) {
     var tr = original.find('tr'),

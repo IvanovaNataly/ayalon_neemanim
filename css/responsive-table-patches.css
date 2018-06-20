@@ -8,11 +8,11 @@ table thead tr th {
 
 table tbody tr td {
   text-align: right;
-  font-size: 16px;
-  line-height: normal; }
+  font-size: 16px; }
 
 table td, table th {
   text-align: right;
+  line-height: normal;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -28,7 +28,7 @@ table th {
       width: 100%;
       height: 68px;
       line-height: 68px;
-      color: #fff;
+      color: #f7f7f7;
       padding-right: 10px;
       background-color: #062a4e;
       position: absolute;
@@ -51,7 +51,7 @@ table th {
     .pinned table tr {
       height: auto !important; }
 
-  .mobile-header {
+  .pinned-header {
     position: absolute;
     right: 35%; } }
 
