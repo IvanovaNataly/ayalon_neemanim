@@ -271,6 +271,11 @@
   width: 100%; }
 
 .responsive-table {
+  width: 100%;
+  height: 300px;
+  overflow: auto; }
+
+.responsive {
   width: 100%; }
 
 .table-row {

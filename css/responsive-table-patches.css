@@ -43,6 +43,10 @@ table th {
       top: 0;
       right: 0; }
 
+  .responsive-table {
+    width: 100%;
+    height: auto; }
+
   div.table-wrapper div.scrollable {
     margin-right: 35%;
     margin-left: 0%;
@@ -61,6 +65,8 @@ table th {
 
   .pinned-header {
     position: absolute;
-    right: 35%; } }
+    right: 35%; }
+    .pinned-header .table-first-column-header {
+      display: none; } }
 
 /*# sourceMappingURL=responsive-table-patches.css.map */

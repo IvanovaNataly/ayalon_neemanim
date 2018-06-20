@@ -126,6 +126,12 @@
 
 .responsive-table {
     width: 100%;
+    height: 300px; // visible area of the table, not including header
+    overflow: auto;
+}
+
+.responsive {
+    width: 100%;
 }
 
 .table-row {
