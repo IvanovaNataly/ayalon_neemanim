@@ -113,7 +113,8 @@
                         </ul>
 
                         <div class="responsive-table-wrapper">
-                                <table class="responsive-table responsive">
+                            <div class="pinned-header">
+                                <table class="responsive-table">
                                     <thead>
                                         <tr class="table-row table-header">
                                             <th class="table-first-column table-first-column-header">שם הקופה</th>
@@ -126,110 +127,125 @@
                                             <th>שארפ</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">1טקסט טקסט טקסט טקסט טקסט</th>
-                                            <td>1טקסט</td>
-                                            <td>טקסט1</td>
-                                            <td>טקסט1</td>
-                                            <td>טקסט1</td>
-                                            <td>1טקסט</td>
-                                            <td>1טקסט</td>
-                                            <td>טקסט1</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט2</>
-                                            <td>2טקסט</td>
-                                            <td>2טקסט</td>
-                                            <td>2טקסט</td>
-                                            <td>טקסט2</td>
-                                            <td>טקסט2</td>
-                                            <td>טקסט2</td>
-                                            <td>טקסט2</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">3טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>3טקסט</td>
-                                            <td>טקסט3</td>
-                                            <td>טקסט3</td>
-                                            <td>טקסט3</td>
-                                            <td>3טקסט</td>
-                                            <td>טקסט3</td>
-                                            <td>טקסט3</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                        <tr class="table-row">
-                                            <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                            <td>טקסט</td>
-                                        </tr>
-                                    </tbody>
                                 </table>
                             </div>
+                            <table class="responsive-table responsive">
+                                <thead class="table-header-hidden">
+                                    <tr class="table-row table-header">
+                                        <th class="table-first-column table-first-column-header">שם הקופה</th>
+                                        <th>מספר</th>
+                                        <th>מסלול</th>
+                                        <th>דמי ניהול</th>
+                                        <th>תשואה</th>
+                                        <th>תשואה 36 חודש</th>
+                                        <th>סטיית תקן</th>
+                                        <th>שארפ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">1טקסט טקסט טקסט טקסט טקסט</th>
+                                        <td>1טקסט</td>
+                                        <td>טקסט1</td>
+                                        <td>טקסט1</td>
+                                        <td>טקסט1</td>
+                                        <td>1טקסט</td>
+                                        <td>1טקסט</td>
+                                        <td>טקסט1</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט2</>
+                                        <td>2טקסט</td>
+                                        <td>2טקסט</td>
+                                        <td>2טקסט</td>
+                                        <td>טקסט2</td>
+                                        <td>טקסט2</td>
+                                        <td>טקסט2</td>
+                                        <td>טקסט2</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">3טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>3טקסט</td>
+                                        <td>טקסט3</td>
+                                        <td>טקסט3</td>
+                                        <td>טקסט3</td>
+                                        <td>3טקסט</td>
+                                        <td>טקסט3</td>
+                                        <td>טקסט3</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <th class="table-first-column">טקסט טקסט טקסט טקסט טקסט</>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                        <td>טקסט</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </article>
 
                     <aside class="table-sidebar">

@@ -31,13 +31,13 @@ $(document).ready(function() {
 		copy.wrap("<div class='pinned' />");
 
 
-		var header = original.clone();
-		header.find("tbody").css("display", "none");
-		original.find("thead").css("display", "none");
-		header.removeClass("responsive");
-
-		original.closest(".table-wrapper").prepend(header);
-		header.wrap("<div class='pinned-header' />");
+		// var header = original.clone();
+		// header.find("tbody").css("display", "none");
+		// original.find("thead").css("display", "none");
+		// header.removeClass("responsive");
+		//
+		// original.closest(".table-wrapper").prepend(header);
+		// header.wrap("<div class='pinned-header' />");
 
 		original.wrap("<div class='scrollable' />");
 

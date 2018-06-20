@@ -25,9 +25,19 @@ table th {
     font-weight: 400;
 }
 
+.table-header-hidden .table-row.table-header {
+    height: 0;
+    line-height: 0;
+    th {
+        font-size: 0;
+        height: 0;
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .responsive-table-wrapper{
-        position: relative;
+        position: relative; //for .pinned-header
         &:before {
             content: "שם הקופה";
             width: 100%;
@@ -45,7 +55,7 @@ table th {
         margin-right: 35%;
         margin-left: 0%;
         overflow: scroll;
-        height: 300px;
+        height: 300px; // visible area of the table, not including header
         margin-top: 68px;
     }
     .pinned {
@@ -53,7 +63,7 @@ table th {
         top: 68px;
         background-color: initial;
         overflow: scroll;
-        height: 300px + 68px;
+        height: 300px + 68px; // visible area of the right column
         table tr {
             height: auto !important;
         }
@@ -63,3 +73,4 @@ table th {
         right: 35%;
     }
 }
+
