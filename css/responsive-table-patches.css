@@ -1,6 +1,44 @@
 @charset "UTF-8";
+.article-item {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  overflow: hidden; }
+.article-link {
+  display: block; }
+.article-figure {
+  margin: 0;
+  padding: 0;
+  background-color: transparent; }
+.article-img {
+  display: block;
+  height: 160px;
+  background-size: cover; }
+.article-caption {
+  height: 70px;
+  padding: 10px 20px 5px 10px;
+  background: white;
+  position: relative; }
+  .article-caption .more {
+    top: 13px;
+    left: 10px; }
+.article-title {
+  font-size: 18px; }
+.article-subtitle {
+  font-size: 14px; }
+
 .responsive-table-wrapper {
   width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .responsive-table-wrapper ::-webkit-scrollbar {
+      width: 6px; }
+    .responsive-table-wrapper ::-webkit-scrollbar:horizontal {
+      height: 6px; }
+    .responsive-table-wrapper ::-webkit-scrollbar-track {
+      background-color: rgba(255, 255, 255, 0.7); }
+    .responsive-table-wrapper ::-webkit-scrollbar-thumb {
+      height: 70px;
+      background-color: #062a4e; } }
 
 .main-table {
   width: 100%;
@@ -36,15 +74,25 @@
     height: 0;
     padding: 0; }
 
-.pinned-header-table {
-  width: 100%; }
+.pinned-header {
+  width: 100%;
+  background-color: #062a4e; }
+  .pinned-header-table {
+    width: calc(100% - 6px); }
+
+.pinned-header-table .table-first-column,
+.main-table .table-first-column {
+  width: 35%; }
+.pinned-header-table th, .pinned-header-table td,
+.main-table th,
+.main-table td {
+  width: calc((100% - 35%) / 7); }
 
 table thead tr th {
   text-align: right;
   font-size: 16px;
   color: #f7f7f7;
-  font-weight: normal;
-  line-height: unset; }
+  font-weight: normal; }
 
 table tbody tr td {
   text-align: right;
@@ -52,10 +100,7 @@ table tbody tr td {
 
 table td, table th {
   text-align: right;
-  line-height: normal;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  line-height: normal; }
 
 table th {
   font-weight: 400; }
@@ -96,9 +141,19 @@ table th {
       height: auto !important; }
 
   .pinned-header {
+    width: auto;
     position: absolute;
     right: 35%; }
     .pinned-header .table-first-column-header {
-      display: none; } }
+      display: none; }
+
+  .pinned-header-table,
+  .responsive-table {
+    width: 400px;
+    table-layout: fixed; }
+    .pinned-header-table th, .pinned-header-table td,
+    .responsive-table th,
+    .responsive-table td {
+      width: 80px; } }
 
 /*# sourceMappingURL=responsive-table-patches.css.map */

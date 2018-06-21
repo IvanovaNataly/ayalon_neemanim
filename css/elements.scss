@@ -137,5 +137,22 @@
     }
 }
 
+@mixin webkitScroll($scrollSkin: transparent,  $thumbColor:  $main-color) {
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
 
+    ::-webkit-scrollbar:horizontal {
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: $scrollSkin;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        height: 70px;
+        background-color: $thumbColor;
+    }
+}
 
