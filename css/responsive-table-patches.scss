@@ -124,11 +124,10 @@ table th {
         margin-left: 0;
         overflow: scroll;
         height: 300px; // visible area of the table, not including header
-        //margin-top: 68px;
     }
     .pinned {
         right: 0;
-        top: 0; //68px;
+        top: 0;
         background-color: initial;
         overflow: scroll;
         height: 300px + 68px; // visible area of the right column
@@ -148,7 +147,6 @@ table th {
     }
     .pinned-header-table,
     .responsive-table {
-        //width: 400px;
         table-layout: fixed;
         th, td {
             width: 80px;

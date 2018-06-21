@@ -21,27 +21,17 @@ $(document).ready(function() {
   $(window).on("resize", updateTables);
 
   function splitTable(original) {
-		original.wrap("<div class='table-wrapper' />");
-		
-		var copy = original.clone();
-		copy.find("td, th:not(.table-first-column), .table-first-column-header").css("display", "none");
-		copy.removeClass("responsive");
+	original.wrap("<div class='table-wrapper' />");
 
-		original.closest(".table-wrapper").append(copy);
-		copy.wrap("<div class='pinned' />");
+	var copy = original.clone();
+	copy.find("td, th:not(.table-first-column), .table-first-column-header").css("display", "none");
+	copy.removeClass("responsive");
 
+	original.closest(".table-wrapper").append(copy);
+	copy.wrap("<div class='pinned' />");
+	original.wrap("<div class='scrollable' />");
 
-		// var header = original.clone();
-		// header.find("tbody").css("display", "none");
-		// original.find("thead").css("display", "none");
-		// header.removeClass("responsive");
-		//
-		// original.closest(".table-wrapper").prepend(header);
-		// header.wrap("<div class='pinned-header' />");
-
-		original.wrap("<div class='scrollable' />");
-
-    	setCellHeights(original, copy);
+	setCellHeights(original, copy);
   }
 
   function unsplitTable(original) {
