@@ -98,6 +98,15 @@ img {
   max-width: 100%;
   height: auto; }
 
+.breadcrumbs a {
+  font-size: 0.93em;
+  color: #232323; }
+
+.breadcrumbs span a:after {
+  content: "\203a";
+  font-size: 1.3em;
+  margin: 0 0.3em; }
+
 .general_section {
   max-width: 1315px;
   margin: auto;
